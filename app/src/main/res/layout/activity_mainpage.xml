@@ -14,6 +14,7 @@
     android:layout_height="wrap_content"
     android:layout_marginTop="50dp"
     android:id="@+id/linera1"
+
     >
     <TextView
         android:layout_width="match_parent"
@@ -42,7 +43,8 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:layout_below="@id/linera1"
-        android:layout_marginTop="5pt">
+        android:layout_marginTop="5pt"
+        android:id="@+id/linar2">
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -52,7 +54,7 @@
             android:layout_below="@id/linera1"
             android:textColor="@color/blue"
             android:textStyle="bold"
-            android:drawableTop="@drawable/ic_baseline_work_outline_24"
+            android:drawableTop="@drawable/book"
             />
         <TextView
             android:layout_width="wrap_content"
@@ -61,7 +63,7 @@
             android:hint="lawyers"
             android:textSize="16pt"
             android:layout_marginHorizontal="10pt"
-            android:drawableTop="@drawable/person">
+            android:drawableTop="@drawable/ic_baseline_work_outline_24">
 
     </TextView>
         <TextView
@@ -75,6 +77,36 @@
             android:textStyle="bold"
             android:drawableTop="@drawable/person"
             />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/linar2"
+        android:layout_marginTop="5pt"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="schedule"
+            android:drawableTop="@drawable/calender"
+            android:textSize="14pt"
+            android:textStyle="bold"
+            android:textColor="@color/blue"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="case update"
+            android:drawableTop="@drawable/update"
+            android:textSize="14pt"
+            android:textStyle="bold"
+            android:textColor="@color/blue"
+            android:backgroundTint="@color/black"
+            android:layout_marginLeft="15pt"
+            />
+
 
     </LinearLayout>
 
