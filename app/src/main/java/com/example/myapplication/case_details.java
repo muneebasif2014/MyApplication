@@ -7,17 +7,17 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class casee extends AppCompatActivity {
-public Button button;
+public class case_details extends AppCompatActivity {
+public Button button ;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_casee);
-        button = (Button) findViewById(R.id.button1);
+        setContentView(R.layout.activity_case_details);
+        button = (Button) findViewById(R.id.button2);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(casee.this, case_details.class);
+                Intent intent= new Intent(case_details.this, opponent_details.class);
                 startActivity(intent);
             }
         });

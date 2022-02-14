@@ -4,26 +4,25 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".casee">
-
+    tools:context=".location_case">
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:id="@+id/linerar_case"
+        android:id="@+id/location_linerar"
         android:padding="8pt"
         android:layout_marginTop="20pt">
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="case status"
+            android:hint="court name"
             android:textSize="14pt"
-            android:id="@+id/case_status"
+
             />
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="clinte name"
+            android:hint="city"
             android:textSize="14pt"
 
             android:layout_marginTop="5pt"
@@ -31,36 +30,15 @@
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="case number"
+            android:hint="judge name"
             android:textSize="14pt"
 
             android:layout_marginTop="5pt"
             />
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="case name"
-            android:textSize="14pt"
 
-            android:layout_marginTop="5pt"
-            />
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="case date"
-            android:textSize="14pt"
 
-            android:layout_marginTop="5pt"
-            />
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="remarks"
-            android:textSize="14pt"
 
-            android:layout_marginTop="5pt"
-            />
-        />
+
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -68,12 +46,11 @@
             android:text="submit"
             android:backgroundTint="#9FAAA8"
             android:textSize="14pt"
-            android:id="@+id/button1"
+            android:layout_marginTop="5pt"
             />
 
 
     </LinearLayout>
-
 
 
 
