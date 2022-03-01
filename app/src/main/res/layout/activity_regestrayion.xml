@@ -26,6 +26,7 @@
         android:layout_height="50dp"
         android:layout_marginTop="10pt"
         android:hint="full name"
+        android:id="@+id/editext_name"
         android:textSize="14pt" />
 
     <EditText
@@ -47,6 +48,8 @@
         android:layout_height="50dp"
         android:layout_marginTop="10pt"
         android:hint="confirm passward"
+        android:id="@+id/pass_edittext"
+
         android:textSize="14pt" />
 
     <Button

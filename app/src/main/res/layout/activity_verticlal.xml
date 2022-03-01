@@ -17,28 +17,30 @@
     android:textSize="50dp">
 
 </TextView>
+
     <EditText
+        android:id="@+id/ali1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/ali1"
-        android:hint="Enter User name"
         android:layout_below="@+id/ali"
         android:layout_marginTop="20dp"
+        android:hint="Enter User name"
         android:padding="10pt"
         android:textSize="14pt">
 
 
     </EditText>
+
     <EditText
+        android:id="@+id/pass"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/pass"
-        android:hint="enter passward"
         android:layout_below="@+id/ali1"
-        android:layout_marginTop="5dp"
-        android:textSize="14pt"
+        android:layout_marginTop="2dp"
+        android:hint="enter passward"
         android:padding="10pt"
-        ></EditText>
+        android:textSize="14pt"></EditText>
+
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
