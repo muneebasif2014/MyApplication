@@ -5,6 +5,10 @@
       <map>
         <entry key="..\:/MyApplications/app/src/main/res/drawable/fingureprint.xml" value="0.1465" />
         <entry key="..\:/MyApplications/app/src/main/res/drawable/ic_baseline_info_24.xml" value="0.1465" />
+        <entry key="..\:/MyApplications/app/src/main/res/layout/activity_case_details.xml" value="0.22447916666666667" />
+        <entry key="..\:/MyApplications/app/src/main/res/layout/activity_casee.xml" value="0.22447916666666667" />
+        <entry key="..\:/MyApplications/app/src/main/res/layout/activity_labtask.xml" value="0.22447916666666667" />
+        <entry key="..\:/MyApplications/app/src/main/res/layout/activity_location_case.xml" value="0.22447916666666667" />
         <entry key="..\:/MyApplications/app/src/main/res/layout/activity_main.xml" value="0.22447916666666667" />
         <entry key="..\:/MyApplications/app/src/main/res/layout/activity_mainpage.xml" value="0.22447916666666667" />
         <entry key="..\:/MyApplications/app/src/main/res/layout/activity_opponent_details.xml" value="0.1743659420289855" />

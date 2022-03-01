@@ -4,156 +4,155 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#123456"
     tools:context=".mainpage"
     android:orientation="vertical"
     android:padding="10pt"
     >
 
-<LinearLayout
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:layout_marginTop="50dp"
-    android:id="@+id/linera1"
 
-    >
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Lawyer diary Featurs"
-        android:textSize="14pt"
         android:id="@+id/text1"
-
-        ></TextView>
-
-
-</LinearLayout>
-    <!--  <ImageButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/imagebutton1"
-        android:src="@drawable/ic_baseline_work_outline_24"
-        android:layout_below="@id/linera1"
-
-
-
-
-    </ImageButton>-->
-    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_below="@id/linera1"
+        android:layout_marginTop="30dp"
+        android:hint="Lawyer diary Featurs"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:padding="10dp"
+        android:textSize="35dp"></TextView>
+
+
+    <RelativeLayout
+        android:id="@+id/linar2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text1"
+        android:layout_marginLeft="3dp"
         android:layout_marginTop="5pt"
-        android:id="@+id/linar2">
+        android:orientation="vertical">
+
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
             android:id="@+id/textview1"
-            android:hint="case"
-            android:textSize="14pt"
-            android:layout_below="@id/linera1"
-            android:textColor="@color/blue"
-            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="6dp"
             android:drawableTop="@drawable/book"
-            />
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/textview2"
-            android:hint="lawyers"
-            android:textSize="14pt"
-            android:layout_marginHorizontal="10pt"
-            android:drawableTop="@drawable/ic_baseline_work_outline_24">
-
-    </TextView>
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/CLINTE"
-            android:hint="Clients"
-            android:textSize="13pt"
-            android:layout_below="@id/linera1"
+            android:hint="case"
             android:textColor="@color/blue"
-            android:textStyle="bold"
-            android:drawableTop="@drawable/person"
-            />
+            android:textSize="10pt"
+            android:textStyle="bold" />
 
-    </LinearLayout>
-    <LinearLayout
+        <TextView
+            android:id="@+id/textview2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textview1"
+            android:layout_centerInParent="true"
+            android:drawableTop="@drawable/ic_baseline_work_outline_24"
+            android:hint="lawyers"
+            android:textSize="11pt"
+            android:textStyle="bold">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/CLINTE"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="289dp"
+            android:drawableTop="@drawable/person"
+            android:hint="Clients"
+            android:textColor="@color/blue"
+            android:textSize="9pt"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/linar3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
         android:layout_below="@id/linar2"
+        android:layout_marginLeft="3dp"
         android:layout_marginTop="5pt"
-        android:id="@+id/linera3"
-        >
+        android:orientation="vertical">
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:hint="schedule"
+            android:layout_marginTop="20dp"
             android:drawableTop="@drawable/calender"
-            android:textSize="13pt"
-            android:textStyle="bold"
+            android:hint="schedule"
             android:textColor="@color/blue"
-            />
+            android:textSize="10pt"
+            android:textStyle="bold" />
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:hint="case update"
-            android:drawableTop="@drawable/update"
-            android:textSize="13pt"
-            android:textStyle="bold"
-            android:textColor="@color/blue"
+            android:layout_marginLeft="230dp"
+            android:layout_marginTop="20dp"
             android:backgroundTint="@color/black"
-            android:layout_marginLeft="15pt"
+            android:drawableTop="@drawable/update"
+            android:hint="case update"
+            android:textColor="@color/blue"
+            android:textSize="10pt"
+            android:textStyle="bold" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/linar4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linar3"
+        android:layout_marginLeft="3dp"
+        android:layout_marginTop="5pt"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="@color/black"
+            android:drawableTop="@drawable/fingureprint"
+            android:hint="evidence"
+            android:textColor="@color/blue"
+            android:textSize="10pt"
+            android:textStyle="bold"
+
             />
 
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4pt"
+            android:backgroundTint="@color/black"
+            android:drawableTop="@drawable/notebook"
+            android:hint="notes"
+            android:textColor="@color/blue"
+            android:textSize="10pt"
+            android:textStyle="bold"
+            android:layout_centerInParent="true"
 
-    </LinearLayout>
-<LinearLayout
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:layout_below="@id/linera3"
-    android:orientation="horizontal"
-    android:id="@+id/linear4"
-    >
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:hint="evidence"
-        android:drawableTop="@drawable/fingureprint"
-        android:textSize="13pt"
-        android:textStyle="bold"
-        android:textColor="@color/blue"
-        android:backgroundTint="@color/black"
+            />
 
-        />
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:hint="notes"
-        android:drawableTop="@drawable/notebook"
-        android:textSize="13pt"
-        android:layout_marginLeft="4pt"
-        android:textStyle="bold"
-        android:textColor="@color/blue"
-        android:backgroundTint="@color/black"
-
-        />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="4pt"
-        android:backgroundTint="@color/black"
-        android:hint="handbooks"
-        android:textColor="@color/blue"
-        android:textSize="13pt"
-        android:textStyle="bold"
-        android:drawableTop="@drawable/book"
-
-
-        />
-</LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="100dp"
+            android:layout_marginLeft="4pt"
+            android:layout_marginTop="100dp"
+            android:layout_marginEnd="100dp"
+            android:layout_marginBottom="100dp"
+            android:backgroundTint="@color/black"
+            android:drawableTop="@drawable/book"
+            android:hint="handbooks"
+            android:textColor="@color/blue"
+            android:textSize="10pt"
+            android:textStyle="bold" />
+    </RelativeLayout>
 
 </RelativeLayout>
