@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
+            android:name=".verticlal"
+            android:exported="false" />
+        <activity
             android:name=".labtask"
             android:exported="false" />
         <activity
@@ -33,7 +36,7 @@
         <activity
             android:name=".MainActivity"
             android:exported="false" />
-        <activity android:name=".verticlal">
+        <activity android:name=".fragment">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
