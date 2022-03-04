@@ -28,6 +28,7 @@ public class verticlal extends AppCompatActivity {
 
 
 
+
         db = new DatabaseHelper(this);
         mTextUsername = (EditText)findViewById(R.id.edittext_username);
         mTextPassword = (EditText)findViewById(R.id.edittext_password);

@@ -8,75 +8,71 @@
     android:orientation="vertical"
     android:padding="10pt"
     >
-
-<LinearLayout
+<RelativeLayout
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_marginTop="50dp"
     android:id="@+id/linera1"
-
     >
+
     <TextView
+        android:textAlignment="center"
+        android:id="@+id/text1"
+        android:textColor="@color/black"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Lawyer diary Featurs"
         android:textSize="14pt"
-        android:id="@+id/text1"
+        android:textStyle="bold"
+
 
         ></TextView>
 
 
-</LinearLayout>
-    <!--  <ImageButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/imagebutton1"
-        android:src="@drawable/ic_baseline_work_outline_24"
-        android:layout_below="@id/linera1"
+</RelativeLayout>
 
-
-
-
-    </ImageButton>-->
     <LinearLayout
+        android:id="@+id/linar2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
         android:layout_below="@id/linera1"
         android:layout_marginTop="5pt"
-        android:id="@+id/linar2">
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/textview1"
-            android:hint="case"
-            android:textSize="14pt"
-            android:layout_below="@id/linera1"
-            android:textColor="@color/blue"
-            android:textStyle="bold"
-            android:drawableTop="@drawable/book"
-            />
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/textview2"
-            android:hint="lawyers"
-            android:textSize="14pt"
-            android:layout_marginHorizontal="10pt"
-            android:drawableTop="@drawable/ic_baseline_work_outline_24">
+        android:textAlignment="center"
+        android:orientation="horizontal">
 
-    </TextView>
         <TextView
+            android:id="@+id/textview1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/CLINTE"
-            android:hint="Clients"
-            android:textSize="13pt"
             android:layout_below="@id/linera1"
+            android:drawableTop="@drawable/book"
+            android:hint="case"
             android:textColor="@color/blue"
-            android:textStyle="bold"
+            android:textSize="14pt"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textview2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10pt"
+            android:drawableTop="@drawable/ic_baseline_work_outline_24"
+            android:hint="lawyers"
+            android:textAlignment="center"
+            android:textSize="14pt">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/CLINTE"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/linera1"
             android:drawableTop="@drawable/person"
-            />
+            android:hint="Clients"
+            android:textColor="@color/blue"
+            android:textSize="13pt"
+            android:textStyle="bold" />
 
     </LinearLayout>
     <LinearLayout
