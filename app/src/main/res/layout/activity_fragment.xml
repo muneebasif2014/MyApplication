@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment"
+    android:orientation="vertical">
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/fragment1"
+        android:name="com.example.myapplication.firstFragment"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_weight="0.5"
+        />
+
+
+    <fragment
+        android:id="@+id/fragment2"
+        android:name="com.example.myapplication.secendFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5pt"
+        android:layout_weight="0.5"
+
+
+        />
+
+
+
+</LinearLayout>

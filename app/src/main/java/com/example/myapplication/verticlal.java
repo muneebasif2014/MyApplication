@@ -9,9 +9,12 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
-import android.widget.Toast;
+
 
 public class verticlal extends AppCompatActivity {
+    EditText name, pass;
+    mydbadaptor helper;
+
 
     EditText mTextUsername;
     EditText mTextPassword;
@@ -27,14 +30,6 @@ public class verticlal extends AppCompatActivity {
         setContentView(R.layout.activity_verticlal);
 
 
-
-
-        db = new DatabaseHelper(this);
-        mTextUsername = (EditText)findViewById(R.id.edittext_username);
-        mTextPassword = (EditText)findViewById(R.id.edittext_password);
-        mButtonLogin = (Button)findViewById(R.id.button_login);
-        mTextViewRegister = (TextView)findViewById(R.id.textview_register);
-        mTextViewRegister.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent registerIntent = new Intent(verticlal.this,regestrayion.class);
@@ -61,5 +56,3 @@ public class verticlal extends AppCompatActivity {
         });
     }
 
-
-}

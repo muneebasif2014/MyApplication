@@ -5,6 +5,10 @@
       <map>
         <entry key="..\:/MyApplications/app/src/main/res/drawable/fingureprint.xml" value="0.1465" />
         <entry key="..\:/MyApplications/app/src/main/res/drawable/ic_baseline_info_24.xml" value="0.1465" />
+        <entry key="..\:/MyApplications/app/src/main/res/layout/activity_case_details.xml" value="0.22447916666666667" />
+        <entry key="..\:/MyApplications/app/src/main/res/layout/activity_casee.xml" value="0.22447916666666667" />
+        <entry key="..\:/MyApplications/app/src/main/res/layout/activity_labtask.xml" value="0.22447916666666667" />
+        <entry key="..\:/MyApplications/app/src/main/res/layout/activity_location_case.xml" value="0.22447916666666667" />
         <entry key="..\:/MyApplications/app/src/main/res/layout/activity_main.xml" value="0.22447916666666667" />
         <entry key="..\:/MyApplications/app/src/main/res/layout/activity_mainpage.xml" value="0.22447916666666667" />
         <entry key="..\:/MyApplications/app/src/main/res/layout/activity_opponent_details.xml" value="0.1743659420289855" />
@@ -17,6 +21,7 @@
         <entry key="..\:/Users/muneeb/AndroidStudioProjects/MyApplication/app/src/main/res/drawable/person.xml" value="0.20462962962962963" />
         <entry key="..\:/Users/muneeb/AndroidStudioProjects/MyApplication/app/src/main/res/layout/activity_case_details.xml" value="0.1" />
         <entry key="..\:/Users/muneeb/AndroidStudioProjects/MyApplication/app/src/main/res/layout/activity_casee.xml" value="0.1" />
+        <entry key="..\:/Users/muneeb/AndroidStudioProjects/MyApplication/app/src/main/res/layout/activity_fragment.xml" value="0.17617753623188406" />
         <entry key="..\:/Users/muneeb/AndroidStudioProjects/MyApplication/app/src/main/res/layout/activity_labtask.xml" value="0.1" />
         <entry key="..\:/Users/muneeb/AndroidStudioProjects/MyApplication/app/src/main/res/layout/activity_listview.xml" value="0.1" />
         <entry key="..\:/Users/muneeb/AndroidStudioProjects/MyApplication/app/src/main/res/layout/activity_location_case.xml" value="0.1" />
@@ -25,6 +30,8 @@
         <entry key="..\:/Users/muneeb/AndroidStudioProjects/MyApplication/app/src/main/res/layout/activity_opponent_details.xml" value="0.1" />
         <entry key="..\:/Users/muneeb/AndroidStudioProjects/MyApplication/app/src/main/res/layout/activity_regestrayion.xml" value="0.18" />
         <entry key="..\:/Users/muneeb/AndroidStudioProjects/MyApplication/app/src/main/res/layout/activity_verticlal.xml" value="0.13" />
+        <entry key="..\:/Users/muneeb/AndroidStudioProjects/MyApplication/app/src/main/res/layout/fragment_first.xml" value="0.17617753623188406" />
+        <entry key="..\:/Users/muneeb/AndroidStudioProjects/MyApplication/app/src/main/res/layout/fragment_secend.xml" value="0.17617753623188406" />
         <entry key="..\:/Users/muneeb/AndroidStudioProjects/MyApplication/app/src/main/res/layout/row.xml" value="0.17300724637681159" />
         <entry key="..\:/collabproject/app/src/main/res/layout/activity_casee.xml" value="0.22447916666666667" />
         <entry key="..\:/collabproject/app/src/main/res/layout/activity_location_case.xml" value="0.22447916666666667" />
