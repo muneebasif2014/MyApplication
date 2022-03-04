@@ -29,6 +29,7 @@ public class verticlal extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_verticlal);
 
+
             @Override
             public void onClick(View view) {
                 Intent registerIntent = new Intent(verticlal.this,regestrayion.class);

@@ -10,49 +10,24 @@
     android:padding="10pt"
     >
 
-
-    <TextView
-        android:id="@+id/text1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
         android:hint="Lawyer diary Featurs"
-        android:textAlignment="center"
-        android:textColor="@color/white"
-        android:padding="10dp"
-        android:textSize="35dp"></TextView>
 
-
-    <RelativeLayout
-        android:id="@+id/linar2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/text1"
-        android:layout_marginLeft="3dp"
-        android:layout_marginTop="5pt"
-        android:orientation="vertical">
 
         <TextView
             android:id="@+id/textview1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginRight="6dp"
-            android:drawableTop="@drawable/book"
-            android:hint="case"
-            android:textColor="@color/blue"
-            android:textSize="10pt"
+
             android:textStyle="bold" />
 
         <TextView
             android:id="@+id/textview2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/textview1"
-            android:layout_centerInParent="true"
-            android:drawableTop="@drawable/ic_baseline_work_outline_24"
-            android:hint="lawyers"
-            android:textSize="11pt"
-            android:textStyle="bold">
+
 
         </TextView>
 
@@ -60,11 +35,7 @@
             android:id="@+id/CLINTE"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="289dp"
-            android:drawableTop="@drawable/person"
-            android:hint="Clients"
-            android:textColor="@color/blue"
-            android:textSize="9pt"
+
             android:textStyle="bold" />
 
     </RelativeLayout>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".splash"
+    android:background="#123456"
+    >
+
+    <ImageView
+        android:id="@+id/splashscreen"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="12dp"
+        android:src="@drawable/lawyer" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="welcome to the Lawyer Diary"
+        android:textAlignment="center"
+        android:textSize="30dp"
+        android:layout_below="@+id/splashscreen"
+        android:textColor="@color/white"
+        android:layout_marginTop="20dp"/>
+</RelativeLayout>
