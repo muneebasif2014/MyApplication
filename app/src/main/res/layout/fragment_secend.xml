@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="horizontal"
     tools:context=".secendFragment">
 
     <!-- TODO: Update blank fragment layout -->
@@ -11,7 +12,6 @@
         android:layout_height="wrap_content"
         android:textSize="20pt"
         android:gravity="center"
-        android:background="@color/blue"
         android:textColor="#FEFDFF"
         android:text="second fragment" />
     <LinearLayout

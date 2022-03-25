@@ -28,7 +28,21 @@
         android:layout_marginTop="12dp"
         android:src="@drawable/lawyer" />
     <EditText
-
+        android:id="@+id/edittext_username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageview"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="5dp"
+        android:background="#30ffffff"
+        android:drawableLeft="@drawable/ic_baseline_person_outline_24"
+        android:drawablePadding="20dp"
+        android:hint="Username"
+        android:padding="20dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white" />
 
     <EditText
         android:id="@+id/edittext_password"
@@ -48,18 +62,34 @@
         android:textColor="@color/white"
         android:textColorHint="@color/white" />
     <EditText
-
+        android:id="@+id/edittext_cnf_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edittext_password"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="5dp"
+        android:background="#30ffffff"
+        android:drawableLeft="@drawable/ic_baseline_info_24"
+        android:drawablePadding="20dp"
+        android:hint="Re-enter-password"
+        android:inputType="textPassword"
+        android:padding="20dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white" />
 
     <Button
         android:id="@+id/button_register"
-        android:layout_width="100dp"
+        android:layout_width="206dp"
         android:layout_height="40dp"
         android:layout_below="@+id/edittext_cnf_password"
         android:layout_centerInParent="true"
         android:layout_marginTop="20dp"
-        android:background="#893997"
+        android:background="#04ea00"
+        android:backgroundTint="@color/purple_200"
         android:text="@string/register"
-        android:textColor="@color/design_default_color_background" />
+        android:textColor="#ffffff" />
 
 
 

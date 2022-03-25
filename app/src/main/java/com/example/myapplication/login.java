@@ -5,34 +5,33 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
-
-public class verticlal extends AppCompatActivity {
-    EditText name, pass;
-    mydbadaptor helper;
-
+public class login extends AppCompatActivity {
 
     EditText mTextUsername;
     EditText mTextPassword;
     Button mButtonLogin;
     TextView mTextViewRegister;
     DatabaseHelper db;
-    ViewGroup progressView;
-    protected boolean isProgressShowing = false;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_verticlal);
+        setContentView(R.layout.activity_login);
 
-
+        db = new DatabaseHelper(this);
+        mTextUsername = (EditText)findViewById(R.id.edittext_username);
+        mTextPassword = (EditText)findViewById(R.id.edittext_password);
+        mButtonLogin = (Button)findViewById(R.id.button_login);
+        mTextViewRegister = (TextView)findViewById(R.id.textview_register);
+        mTextViewRegister.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent registerIntent = new Intent(verticlal.this,regestrayion.class);
+                Intent registerIntent = new Intent(login.this,registration.class);
                 startActivity(registerIntent);
             }
         });
@@ -45,14 +44,15 @@ public class verticlal extends AppCompatActivity {
                 Boolean res = db.checkUser(user, pwd);
                 if(res == true)
                 {
-                    Intent HomePage = new Intent(verticlal.this,mainpage.class);
+                    Intent HomePage = new Intent(login.this,mainpage.class);
                     startActivity(HomePage);
                 }
                 else
                 {
-                    Toast.makeText(verticlal.this,"password incorrect",Toast.LENGTH_SHORT).show();
+                    Toast.makeText(login.this,"password incorrect",Toast.LENGTH_SHORT).show();
                 }
             }
         });
     }
 
+}

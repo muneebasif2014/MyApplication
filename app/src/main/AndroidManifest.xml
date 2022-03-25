@@ -10,7 +10,13 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-
+            android:name=".registration"
+            android:exported="false" />
+        <activity
+            android:name=".fragment"
+            android:exported="false" />
+        <activity
+            android:name=".splash"
             android:exported="false" />
         <activity
             android:name=".labtask"
@@ -30,13 +36,11 @@
         <activity
             android:name=".mainpage"
             android:exported="false" />
-        <activity
-            android:name=".regestrayion"
-            android:exported="false" />
+
         <activity
             android:name=".MainActivity"
             android:exported="false" />
-        <activity android:name=".fragment">
+        <activity android:name=".login">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
