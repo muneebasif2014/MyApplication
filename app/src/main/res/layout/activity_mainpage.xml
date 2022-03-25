@@ -1,152 +1,355 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".mainpage"
-    android:orientation="vertical"
-    android:padding="10pt"
-    >
+    tools:context=".MainActivity"
+    android:background="#DFD8D8"
+    android:orientation="vertical">
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
-        android:id="@+id/linera1"
+        android:layout_height="180dp"
+        android:background="#123456">
 
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="130dp"
+            android:background="@drawable/lawyer" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         >
-        <TextView
+        <ScrollView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Lawyer diary Featurs"
-            android:textSize="14pt"
-            android:id="@+id/text1"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp"
+                    android:orientation="horizontal"
+                    >
 
-            ></TextView>
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="0dp"
+                        android:layout_height="160dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_weight="1"
+                        app:cardCornerRadius="20dp">
 
 
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:id="@+id/img1"
+                                android:layout_width="80dp"
+                                android:layout_height="80dp"
+                                android:layout_centerInParent="true"
+                                android:src="@drawable/book" />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/txt1"
+                                android:text="case"
+                                android:textSize="16sp"
+                                android:textStyle="bold"
+                                android:layout_centerInParent="true"
+                                android:layout_below="@+id/img1"
+                                android:layout_marginTop="10dp"/>
+
+                        </RelativeLayout>
+                    </androidx.cardview.widget.CardView>
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="0dp"
+                        android:layout_height="160dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_weight="1"
+                        app:cardCornerRadius="20dp">
+
+
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:layout_width="80dp"
+                                android:layout_height="80dp"
+                                android:id="@+id/img2"
+                                android:layout_centerInParent="true"
+                                android:src="@drawable/ic_baseline_work_outline_24"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/txt2"
+                                android:text="Lawyers"
+                                android:textSize="16sp"
+                                android:textStyle="bold"
+                                android:layout_centerInParent="true"
+                                android:layout_below="@+id/img2"
+                                android:layout_marginTop="10dp"/>
+
+                        </RelativeLayout>
+                    </androidx.cardview.widget.CardView>
+
+
+
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp"
+                    android:orientation="horizontal"
+                    >
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="0dp"
+                        android:layout_height="160dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_weight="1"
+                        app:cardCornerRadius="20dp">
+
+
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:id="@+id/img3"
+                                android:layout_width="80dp"
+                                android:layout_height="80dp"
+                                android:layout_centerInParent="true"
+                                android:src="@drawable/person" />
+
+                            <TextView
+                                android:id="@+id/txt3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/img3"
+                                android:layout_centerInParent="true"
+                                android:layout_marginTop="10dp"
+                                android:text="Clients"
+                                android:textSize="16sp"
+                                android:textStyle="bold" />
+
+                        </RelativeLayout>
+                    </androidx.cardview.widget.CardView>
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="0dp"
+                        android:layout_height="160dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_weight="1"
+                        app:cardCornerRadius="20dp">
+
+
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:id="@+id/img4"
+                                android:layout_width="80dp"
+                                android:layout_height="80dp"
+                                android:layout_centerInParent="true"
+                                android:src="@drawable/calender" />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/txt4"
+                                android:text="Schedule"
+                                android:textSize="16sp"
+                                android:textStyle="bold"
+                                android:layout_centerInParent="true"
+                                android:layout_below="@+id/img4"
+                                android:layout_marginTop="10dp"/>
+
+                        </RelativeLayout>
+                    </androidx.cardview.widget.CardView>
+
+
+
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp"
+                    android:orientation="horizontal"
+                    >
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="0dp"
+                        android:layout_height="160dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_weight="1"
+                        app:cardCornerRadius="20dp">
+
+
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:id="@+id/img5"
+                                android:layout_width="80dp"
+                                android:layout_height="80dp"
+                                android:layout_centerInParent="true"
+                                android:src="@drawable/update" />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/txt5"
+                                android:text="case update"
+                                android:textSize="16sp"
+                                android:textStyle="bold"
+                                android:layout_centerInParent="true"
+                                android:layout_below="@+id/img5"
+                                android:layout_marginTop="10dp"/>
+
+                        </RelativeLayout>
+                    </androidx.cardview.widget.CardView>
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="0dp"
+                        android:layout_height="160dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_weight="1"
+                        app:cardCornerRadius="20dp">
+
+
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:id="@+id/img6"
+                                android:layout_width="80dp"
+                                android:layout_height="80dp"
+                                android:layout_centerInParent="true"
+                                android:src="@drawable/fingureprint" />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/txt6"
+                                android:text="Evidance"
+                                android:textSize="16sp"
+                                android:textStyle="bold"
+                                android:layout_centerInParent="true"
+                                android:layout_below="@+id/img6"
+                                android:layout_marginTop="10dp"/>
+
+                        </RelativeLayout>
+                    </androidx.cardview.widget.CardView>
+
+
+
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp"
+                    android:orientation="horizontal"
+                    >
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="0dp"
+                        android:layout_height="160dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_weight="1"
+                        app:cardCornerRadius="20dp">
+
+
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:layout_width="80dp"
+                                android:layout_height="80dp"
+                                android:id="@+id/img7"
+                                android:layout_centerInParent="true"
+                                android:src="@drawable/notebook"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/txt7"
+                                android:text="Note"
+                                android:textSize="16sp"
+                                android:textStyle="bold"
+                                android:layout_centerInParent="true"
+                                android:layout_below="@+id/img7"
+                                android:layout_marginTop="10dp"/>
+
+                        </RelativeLayout>
+                    </androidx.cardview.widget.CardView>
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="0dp"
+                        android:layout_height="160dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_weight="1"
+                        app:cardCornerRadius="20dp">
+
+
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:id="@+id/img8"
+                                android:layout_width="80dp"
+                                android:layout_height="80dp"
+                                android:layout_centerInParent="true"
+                                android:src="@drawable/book" />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/txt8"
+                                android:text="Handbook"
+                                android:textSize="16sp"
+                                android:textStyle="bold"
+                                android:layout_centerInParent="true"
+                                android:layout_below="@+id/img8"
+                                android:layout_marginTop="10dp"/>
+
+                        </RelativeLayout>
+                    </androidx.cardview.widget.CardView>
+
+
+
+
+
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
     </LinearLayout>
-    <!--  <ImageButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/imagebutton1"
-        android:src="@drawable/ic_baseline_work_outline_24"
-        android:layout_below="@id/linera1"
-
-
-
-
-    </ImageButton>-->
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_below="@id/linera1"
-        android:layout_marginTop="5pt"
-        android:id="@+id/linar2">
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/textview1"
-            android:hint="case"
-            android:textSize="14pt"
-            android:layout_below="@id/linera1"
-            android:textStyle="bold"
-            android:drawableTop="@drawable/book"
-            />
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/textview2"
-            android:hint="lawyers"
-            android:textSize="14pt"
-            android:layout_marginHorizontal="10pt"
-            android:drawableTop="@drawable/ic_baseline_work_outline_24">
-
-        </TextView>
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/CLINTE"
-            android:hint="Clients"
-            android:textSize="13pt"
-            android:layout_below="@id/linera1"
-            android:textStyle="bold"
-            android:drawableTop="@drawable/person"
-            />
-
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_below="@id/linar2"
-        android:layout_marginTop="5pt"
-        android:id="@+id/linera3"
-        >
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:hint="schedule"
-            android:drawableTop="@drawable/calender"
-            android:textSize="13pt"
-            android:textStyle="bold"
-            />
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:hint="case update"
-            android:drawableTop="@drawable/update"
-            android:textSize="13pt"
-            android:textStyle="bold"
-            android:backgroundTint="@color/black"
-            android:layout_marginLeft="15pt"
-            />
-
-
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/linera3"
-        android:orientation="horizontal"
-        android:id="@+id/linear4"
-        >
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:hint="evidence"
-            android:drawableTop="@drawable/fingureprint"
-            android:textSize="13pt"
-            android:textStyle="bold"
-            android:backgroundTint="@color/black"
-
-            />
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:hint="notes"
-            android:drawableTop="@drawable/notebook"
-            android:textSize="13pt"
-            android:layout_marginLeft="4pt"
-            android:textStyle="bold"
-            android:backgroundTint="@color/black"
-
-            />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="4pt"
-            android:backgroundTint="@color/black"
-            android:hint="handbooks"
-            android:textSize="13pt"
-            android:textStyle="bold"
-            android:drawableTop="@drawable/book"
-
-
-            />
-    </LinearLayout>
-
-</RelativeLayout>
+</LinearLayout>

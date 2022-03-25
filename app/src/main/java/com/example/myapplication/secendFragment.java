@@ -9,11 +9,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-/**
- * A simple {@link Fragment} subclass.
- * Use the {@link secendFragment#newInstance} factory method to
- * create an instance of this fragment.
- */
+
 public class secendFragment extends Fragment {
 
     TextView textView;

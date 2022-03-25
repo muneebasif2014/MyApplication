@@ -15,7 +15,7 @@ public class mainpage extends AppCompatActivity {
         setContentView(R.layout.activity_mainpage);
 
 
-        textView= (TextView) findViewById(R.id.textview1);
+        textView= (TextView) findViewById(R.id.txt1);
         textView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -23,14 +23,7 @@ public class mainpage extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-        text = (TextView) findViewById(R.id.text1);
-        text.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent i = new Intent(mainpage.this, labtask.class);
-                startActivity(i);
-            }
-        });
+
 
     }
 }
