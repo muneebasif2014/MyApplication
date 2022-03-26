@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
+            android:name=".Schedule"
+            android:exported="false" />
+        <activity
             android:name=".clinte"
             android:exported="false" />
         <activity

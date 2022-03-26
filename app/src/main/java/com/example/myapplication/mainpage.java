@@ -8,7 +8,7 @@ import android.view.View;
 import android.widget.TextView;
 
 public class mainpage extends AppCompatActivity {
-    public TextView textView , text, text2 ;
+    public TextView textView , text, text2 , txt3;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -37,6 +37,14 @@ text2.setOnClickListener(new View.OnClickListener() {
     @Override
     public void onClick(View view) {
         Intent intent = new Intent(mainpage.this, clinte.class);
+        startActivity(intent);
+    }
+});
+txt3 = (TextView) findViewById(R.id.txt4);
+txt3.setOnClickListener(new View.OnClickListener() {
+    @Override
+    public void onClick(View view) {
+        Intent intent= new Intent(mainpage.this, Schedule.class);
         startActivity(intent);
     }
 });
