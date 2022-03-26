@@ -18,12 +18,20 @@ public class mainpage extends AppCompatActivity {
         textView= (TextView) findViewById(R.id.txt1);
         textView.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v) {
+            public void onClick(View v )  {
                 Intent intent= new Intent(mainpage.this, casee.class);
                 startActivity(intent);
             }
-        });
 
+        });
+    text = (TextView) findViewById(R.id.txt2);
+    text.setOnClickListener(new View.OnClickListener() {
+        @Override
+        public void onClick(View view) {
+            Intent intent = new Intent(mainpage.this, lawyer.class);
+            startActivity(intent);
+        }
+    });
 
     }
 }
