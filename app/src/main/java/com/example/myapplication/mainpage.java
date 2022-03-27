@@ -8,7 +8,7 @@ import android.view.View;
 import android.widget.TextView;
 
 public class mainpage extends AppCompatActivity {
-    public TextView textView , text, text2 , txt3;
+    public TextView textView , text, text2 , txt3, txt4;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -48,5 +48,15 @@ txt3.setOnClickListener(new View.OnClickListener() {
         startActivity(intent);
     }
 });
+        txt4 = (TextView) findViewById(R.id.txt5);
+        txt4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent= new Intent(mainpage.this, UPdate.class);
+                startActivity(intent);
+            }
+        });
+
+
     }
 }
