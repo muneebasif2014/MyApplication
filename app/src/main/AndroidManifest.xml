@@ -10,10 +10,13 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".registration"
+            android:name=".Schedule"
             android:exported="false" />
         <activity
-            android:name=".fragment"
+            android:name=".clinte"
+            android:exported="false" />
+        <activity
+            android:name=".lawyer"
             android:exported="false" />
         <activity
             android:name=".login"
@@ -34,13 +37,16 @@
             android:name=".casee"
             android:exported="false" />
         <activity
-            android:name=".mainpage"
-            android:exported="false" />
-
-        <activity
             android:name=".MainActivity"
             android:exported="false" />
-        <activity android:name=".splash"
+        <activity
+            android:name=".registration"
+            android:exported="false" />
+        <activity
+            android:name=".fragment"
+            android:exported="false" />
+        <activity
+            android:name=".mainpage"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
