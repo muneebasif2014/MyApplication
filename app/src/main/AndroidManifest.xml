@@ -43,13 +43,13 @@
             android:name=".MainActivity"
             android:exported="false" />
         <activity
-            android:name=".registration"
+            android:name=".mainpage"
             android:exported="false" />
         <activity
             android:name=".fragment"
             android:exported="false" />
         <activity
-            android:name=".mainpage"
+            android:name=".registration"
             android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
