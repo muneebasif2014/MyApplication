@@ -5,22 +5,21 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
-    android:background="#123456"
+    android:background="@drawable/download"
     android:orientation="vertical">
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="100dp"
-        android:background="#123456">
+        android:layout_height="100dp">
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Dashboard"
-            android:textAlignment="center"
             android:textSize="40dp"
             android:textStyle="bold"
-            android:id="@+id/dashboard"/>
+            android:id="@+id/dashboard"
+            android:gravity="center_horizontal" />
 
     </LinearLayout>
 
