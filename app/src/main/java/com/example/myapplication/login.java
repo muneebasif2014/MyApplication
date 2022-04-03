@@ -24,7 +24,7 @@ public class login extends AppCompatActivity {
     Button mButtonLogin;
     TextView mTextViewRegister;
     String emailPattern = "[a-zA-Z0-9._-]+@[a-z]+\\.+[a-z]+";
-    DatabaseHelper db;
+
     FirebaseAuth mAuth;
     FirebaseUser mUser;
 
@@ -33,11 +33,11 @@ public class login extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
-        db = new DatabaseHelper(this);
+
         mTextUsername = (EditText)findViewById(R.id.edittext_username);
         mTextPassword = (EditText)findViewById(R.id.edittext_password);
         mButtonLogin = (Button)findViewById(R.id.button_login);
-        mTextViewRegister = (TextView)findViewById(R.id.textview_register);
+
         mAuth= FirebaseAuth.getInstance();
         mUser=mAuth.getCurrentUser();
         mTextViewRegister.setOnClickListener(new View.OnClickListener() {
