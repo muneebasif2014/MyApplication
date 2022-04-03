@@ -8,4 +8,6 @@
     <string name="confirm_password">Confirm Password</string>
     <string name="already_registered">Already Registered? </string>
     <string name="welcome_user">Welcome User</string>
+    <string name="sign_in">sign in</string>
+
 </resources>

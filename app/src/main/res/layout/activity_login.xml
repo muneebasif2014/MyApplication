@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:id="@+id/container"
-    android:background="#123456"
+    android:background="@drawable/download"
     android:gravity="center_horizontal">
 
     <TextView
@@ -15,10 +15,10 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
         android:text="The Lawyer diary"
-        android:textAlignment="center"
         android:textColor="@color/white"
         android:textSize="35dp"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        android:gravity="center_horizontal" />
 
     <ImageView
         android:id="@+id/imageview"
@@ -29,14 +29,13 @@
         android:layout_marginTop="12dp"
         android:src="@drawable/lawyer" />
 
-
     <EditText
-        android:id="@+id/edittext_username"
+        android:id="@+id/username1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/imageview"
         android:layout_marginStart="10dp"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="50dp"
         android:layout_marginEnd="10dp"
         android:background="#30ffffff"
         android:drawableLeft="@drawable/ic_baseline_person_outline_24"
@@ -44,13 +43,13 @@
         android:hint="Username"
         android:padding="20dp"
         android:textColor="@color/white"
-        android:textColorHint="@color/white" />
+        android:textColorHint="@color/white"/>
 
     <EditText
-        android:id="@+id/edittext_password"
+        android:id="@+id/password1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/edittext_username"
+        android:layout_below="@id/username1"
         android:layout_marginStart="10dp"
         android:layout_marginTop="10dp"
         android:layout_marginEnd="10dp"
@@ -61,43 +60,29 @@
         android:inputType="textPassword"
         android:padding="20dp"
         android:textColor="@color/white"
-        android:textColorHint="@color/white" />
+        android:textColorHint="@color/white"/>
 
     <Button
-        android:id="@+id/button_login"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/edittext_password"
+        android:id="@+id/btnsignin1"
+        android:layout_width="206dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/password1"
         android:layout_centerInParent="true"
         android:layout_marginTop="12dp"
-        android:background="#6E6363"
-        android:backgroundTint="@color/purple_200"
         android:text="LOGIN"
+        android:background="?android:attr/selectableItemBackground"
         android:textColor="@color/white"
         android:textSize="20dp" />
 
-
-    <TextView
-        android:id="@+id/textview_register"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/button_login"
-        android:layout_marginTop="60dp"
-        android:text="Don't you have account? Register Here"
-        android:textAlignment="center"
-        android:textColor="@color/white" />
-
-
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/textview_register"
-        android:layout_marginTop="100dp"
+        android:layout_below="@+id/btnsignin1"
+        android:layout_marginTop="150dp"
         android:text="Copyrights &#169; TMS Pvt Ltd, Lahore"
         android:textAlignment="center"
         android:textColor="@color/white"
         android:textSize="14sp" />
-
 
 
 </RelativeLayout>
