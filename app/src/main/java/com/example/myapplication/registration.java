@@ -20,7 +20,7 @@ import com.google.firebase.auth.FirebaseUser;
 
 public class registration extends AppCompatActivity {
 
-    DatabaseHelper db;
+
     EditText mTextUsername;
     EditText mTextPassword;
     EditText mTextCnfPassword;
@@ -37,7 +37,7 @@ public class registration extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_registration);
 
-        db = new DatabaseHelper(this);
+
         mTextUsername = (EditText)findViewById(R.id.edittext_username);
         mTextPassword = (EditText)findViewById(R.id.edittext_password);
         mTextCnfPassword = (EditText)findViewById(R.id.edittext_cnf_password);

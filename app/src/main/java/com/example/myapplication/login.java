@@ -53,9 +53,9 @@ public class login extends AppCompatActivity {
             public void onClick(View view) {
                permormlogin();
 
-                /* String user = mTextUsername.getText().toString().trim();
+                 String user = mTextUsername.getText().toString().trim();
                 String pwd = mTextPassword.getText().toString().trim();
-
+/*
                Boolean res = db.checkUser(user, pwd);
                 if(res == true)
                 {
