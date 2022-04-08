@@ -49,7 +49,7 @@ public class registration extends AppCompatActivity {
         mTextViewLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent LoginIntent = new Intent(registration.this,login.class);
+                Intent LoginIntent = new Intent(registration.this,LoginActivity.class);
                 startActivity(LoginIntent);
             }
         });

@@ -93,16 +93,15 @@
         android:textColor="#ffffff" />
 
 
-
     <TextView
         android:id="@+id/textview_login"
         android:layout_width="wrap_content"
         android:layout_height="35dp"
+        android:layout_below="@+id/button_register"
+        android:layout_centerInParent="true"
         android:layout_marginTop="30dp"
         android:text="already_registered? Login Here"
-        android:textColor="#ffffff"
-        android:layout_centerInParent="true"
-        android:layout_below="@+id/button_register"/>
+        android:textColor="#ffffff" />
 
 
 
