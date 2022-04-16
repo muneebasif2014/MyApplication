@@ -19,7 +19,7 @@
             android:layout_height="wrap_content"
             android:hint="case status"
             android:textSize="14pt"
-            android:id="@+id/case_status"
+            android:id="@+id/case_status_up"
             />
 
         <EditText
@@ -27,7 +27,7 @@
             android:layout_height="wrap_content"
             android:hint="case number"
             android:textSize="14pt"
-
+android:id="@+id/up_CASe_num"
             android:layout_marginTop="5pt"
             />
         <EditText
@@ -35,7 +35,7 @@
             android:layout_height="wrap_content"
             android:hint="case name"
             android:textSize="14pt"
-
+android:id="@+id/up_case_name"
             android:layout_marginTop="5pt"
             />
         <EditText
@@ -43,7 +43,7 @@
             android:layout_height="wrap_content"
             android:hint="case date"
             android:textSize="14pt"
-
+android:id="@+id/up_cASe_date"
             android:layout_marginTop="5pt"
             />
         <EditText
@@ -51,7 +51,7 @@
             android:layout_height="wrap_content"
             android:hint="update"
             android:textSize="14pt"
-
+android:id="@+id/Up_update"
             android:layout_marginTop="5pt"
             />
         />
@@ -62,7 +62,7 @@
             android:text="submit"
             android:backgroundTint="#9FAAA8"
             android:textSize="14pt"
-            android:id="@+id/button1"
+            android:id="@+id/button_up"
             />
 
 
