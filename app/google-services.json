@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1086726265964",
+    "project_id": "lawyer-dairy",
+    "storage_bucket": "lawyer-dairy.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1086726265964:android:ab4cc05bf4e8923aef0c49",
+        "android_client_info": {
+          "package_name": "com.example.myapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1086726265964-rs4sacdaar5fc45mschqj05dsn4o3g5c.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA7im4Cq3WIYm8abAuHhfF3x3Iqr0Oy7CM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1086726265964-rs4sacdaar5fc45mschqj05dsn4o3g5c.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
