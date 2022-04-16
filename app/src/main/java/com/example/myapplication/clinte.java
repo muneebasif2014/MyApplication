@@ -6,6 +6,10 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
+
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 
 public class clinte extends AppCompatActivity {
     EditText t1,t2,t3,t4,t5,t6;
@@ -29,6 +33,18 @@ public class clinte extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
+                String clinte_name = t1.getText().toString();
+                String clinte_add = t2.getText().toString();
+                String clinte_city = t3.getText().toString();
+                String clinte_number= t4.getText().toString();
+                String clinte_email = t5.getText().toString();
+                String clinte_remarks = t6.getText().toString();
+
+               clinte_dataholder obj = new clinte_dataholder( clinte_add, clinte_city, clinte_number, clinte_email, clinte_remarks);
+                FirebaseDatabase db = FirebaseDatabase.getInstance();
+                DatabaseReference node = db.getReference("clinte_data");
+                node.child(clinte_name).setValue(obj);
+                Toast.makeText(getApplicationContext(),"data insert", Toast.LENGTH_LONG).show();
             }
         });
     }

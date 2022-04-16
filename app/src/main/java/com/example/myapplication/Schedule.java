@@ -8,6 +8,10 @@ import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Spinner;
+import android.widget.Toast;
+
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 
 public class Schedule extends AppCompatActivity {
     EditText t1,t2,t3,t4,t5,t6;
@@ -37,6 +41,19 @@ public class Schedule extends AppCompatActivity {
           @Override
           public void onClick(View view) {
 
+              String case_status = t1.getText().toString();
+              String clintename = t2.getText().toString();
+              String casenum = t3.getText().toString();
+              String case_name =t4.getText().toString();
+              String case_date = t5.getText().toString();
+              String sc_remarks = t6.getText().toString();
+              String drop = dropdown.getSelectedItem().toString();
+
+              Schedule_dataholder obj = new Schedule_dataholder(case_status, drop ,clintename  , case_name, case_date , sc_remarks  );
+              FirebaseDatabase db = FirebaseDatabase.getInstance();
+              DatabaseReference node = db.getReference("Schedual");
+              node.child(casenum).setValue(obj);
+              Toast.makeText(getApplicationContext(),"data insert", Toast.LENGTH_LONG).show();
           }
       });
 
