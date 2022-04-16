@@ -16,6 +16,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="opponent name"
+            android:id="@+id/opponentname"
             android:textSize="14pt"
 
             />
@@ -23,6 +24,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="opponent laywer"
+            android:id="@+id/oppolawyer"
             android:textSize="14pt"
 
             android:layout_marginTop="5pt"
@@ -31,6 +33,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="opponent contact"
+            android:id="@+id/oppcontact"
             android:textSize="14pt"
 
             android:layout_marginTop="5pt"

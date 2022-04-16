@@ -17,6 +17,7 @@
             android:layout_height="wrap_content"
             android:hint="case type"
             android:textSize="14pt"
+            android:id="@+id/casetype"
 
             />
         <EditText
@@ -24,6 +25,7 @@
             android:layout_height="wrap_content"
             android:hint="case charges"
             android:textSize="14pt"
+            android:id="@+id/casecharges"
 
             android:layout_marginTop="5pt"
             />
@@ -32,6 +34,7 @@
             android:layout_height="wrap_content"
             android:hint="case petitioner"
             android:textSize="14pt"
+            android:id="@+id/casepetitioner"
 
             android:layout_marginTop="5pt"
             />
@@ -40,6 +43,7 @@
             android:layout_height="wrap_content"
             android:hint="case responder"
             android:textSize="14pt"
+            android:id="@+id/caseresponder"
 
             android:layout_marginTop="5pt"
             />

@@ -58,7 +58,8 @@ case_DataHolder obj = new case_DataHolder(casestatus, clintename,casename,caseda
                 remarks.setText("");
                 Toast.makeText(getApplicationContext(),"data insert", Toast.LENGTH_LONG).show();
                Intent intent = new Intent(casee.this, case_details.class);
-                startActivity(intent);
+               intent.putExtra("keycasenumber",casenumber);
+               startActivity(intent);
             }
         });
     }

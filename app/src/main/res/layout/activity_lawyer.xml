@@ -14,7 +14,7 @@
         android:layout_marginTop="20pt">
 
         <EditText
-            android:id="@+id/case_status"
+            android:id="@+id/lawerid"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="lawyer id"
@@ -25,7 +25,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="5pt"
             android:hint="lawyer name"
-
+            android:id="@+id/laywername"
             android:textSize="10dp" />
 
         <EditText
@@ -33,6 +33,7 @@
             android:layout_height="wrap_content"
             android:hint="lawyer number"
             android:textSize="10dp"
+            android:id="@+id/lawyernumber"
 
             android:layout_marginTop="5pt"
             />
@@ -41,7 +42,7 @@
             android:layout_height="wrap_content"
             android:hint="address"
             android:textSize="10dp"
-
+            android:id="@+id/layweradd"
             android:layout_marginTop="5pt"
             />
         <EditText
@@ -49,7 +50,7 @@
             android:layout_height="wrap_content"
             android:hint="catagory"
             android:textSize="10dp"
-
+            android:id="@+id/lawyercatag"
             android:layout_marginTop="5pt"
             />
         <EditText
@@ -57,7 +58,7 @@
             android:layout_height="wrap_content"
             android:hint="remarks"
             android:textSize="10dp"
-
+            android:id="@+id/laywerremarks"
             android:layout_marginTop="5pt"
             />
         />
