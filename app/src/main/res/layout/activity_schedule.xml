@@ -30,7 +30,7 @@
             android:layout_height="wrap_content"
             android:hint="clinte name"
             android:textSize="14pt"
-
+            android:id="@+id/clintename"
             android:layout_marginTop="5pt"
             />
         <EditText
@@ -38,7 +38,7 @@
             android:layout_height="wrap_content"
             android:hint="case number"
             android:textSize="14pt"
-
+            android:id="@+id/casenum"
             android:layout_marginTop="5pt"
             />
         <EditText
@@ -46,7 +46,7 @@
             android:layout_height="wrap_content"
             android:hint="case name"
             android:textSize="14pt"
-
+            android:id="@+id/casename"
             android:layout_marginTop="5pt"
             />
         <EditText
@@ -54,7 +54,7 @@
             android:layout_height="wrap_content"
             android:hint="case date"
             android:textSize="14pt"
-
+            android:id="@+id/casedate"
             android:layout_marginTop="5pt"
             />
         <EditText
@@ -62,7 +62,7 @@
             android:layout_height="wrap_content"
             android:hint="remarks"
             android:textSize="14pt"
-
+            android:id="@+id/scremsrk"
             android:layout_marginTop="5pt"
             />
         />
