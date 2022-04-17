@@ -4,67 +4,121 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".UPdate">
+    tools:context=".casee"
+    android:background="@drawable/download"
+    android:orientation="horizontal">
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:id="@+id/linerar_case"
-        android:padding="8pt"
-        android:layout_marginTop="20pt">
+        android:layout_height="100dp">
 
-        <EditText
+        <TextView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="case status"
-            android:textSize="14pt"
-            android:id="@+id/case_status_up"
-            />
-
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="case number"
-            android:textSize="14pt"
-android:id="@+id/up_CASe_num"
-            android:layout_marginTop="5pt"
-            />
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="case name"
-            android:textSize="14pt"
-android:id="@+id/up_case_name"
-            android:layout_marginTop="5pt"
-            />
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="case date"
-            android:textSize="14pt"
-android:id="@+id/up_cASe_date"
-            android:layout_marginTop="5pt"
-            />
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="update"
-            android:textSize="14pt"
-android:id="@+id/Up_update"
-            android:layout_marginTop="5pt"
-            />
-        />
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:text="submit"
-            android:backgroundTint="#9FAAA8"
-            android:textSize="14pt"
-            android:id="@+id/button_up"
-            />
-
-
+            android:layout_height="match_parent"
+            android:layout_marginTop="30dp"
+            android:gravity="center_horizontal"
+            android:text="Case Update"
+            android:textColor="@color/white"
+            android:textSize="30dp"
+            android:textStyle="bold" />
     </LinearLayout>
+
+
+    <EditText
+        android:id="@+id/cases_status"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="5dp"
+        android:background="#30ffffff"
+        android:drawablePadding="20dp"
+        android:hint="Case Status"
+        android:inputType="textPassword"
+        android:padding="15dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white" />
+
+
+    <EditText
+        android:id="@+id/case_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cases_status"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="5dp"
+        android:background="#30ffffff"
+        android:drawablePadding="20dp"
+        android:hint="Case Number"
+        android:padding="15dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white" />
+
+    <EditText
+        android:id="@+id/case_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/case_number"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="5dp"
+        android:background="#30ffffff"
+        android:drawablePadding="20dp"
+        android:hint="Case Name"
+        android:padding="15dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white" />
+
+    <EditText
+        android:id="@+id/case_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/case_name"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="5dp"
+        android:background="#30ffffff"
+        android:drawablePadding="20dp"
+        android:hint="Case Date"
+        android:padding="15dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white" />
+
+    <EditText
+        android:id="@+id/update"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/case_date"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="5dp"
+        android:background="#30ffffff"
+        android:drawablePadding="20dp"
+        android:hint="update"
+        android:padding="15dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white" />
+    />
+
+    <Button
+        android:id="@+id/button_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/update"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="12dp"
+        android:text="Submit"
+        android:textColor="@color/white"
+        android:textSize="20dp" />
+
+
+
+
+
 </RelativeLayout>

@@ -4,64 +4,104 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".case_details">
+    tools:context=".casee"
+    android:background="@drawable/download"
+    android:orientation="horizontal">
+
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:id="@+id/case_details_linerar"
-        android:padding="8pt"
-        android:layout_marginTop="20pt">
-        <EditText
+        android:layout_height="100dp">
+
+        <TextView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="case type"
-            android:textSize="14pt"
-            android:id="@+id/casetype"
-
-            />
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="case charges"
-            android:textSize="14pt"
-            android:id="@+id/casecharges"
-
-            android:layout_marginTop="5pt"
-            />
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="case petitioner"
-            android:textSize="14pt"
-            android:id="@+id/casepetitioner"
-
-            android:layout_marginTop="5pt"
-            />
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="case responder"
-            android:textSize="14pt"
-            android:id="@+id/caseresponder"
-
-            android:layout_marginTop="5pt"
-            />
-
-
-        />
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:text="submit"
-            android:backgroundTint="#9FAAA8"
-            android:textSize="14pt"
-            android:layout_marginTop="5pt"
-            android:id="@+id/button2"
-            />
-
-
+            android:layout_height="match_parent"
+            android:layout_marginTop="30dp"
+            android:gravity="center_horizontal"
+            android:text="Case Details"
+            android:textColor="@color/white"
+            android:textSize="30dp"
+            android:textStyle="bold" />
     </LinearLayout>
+
+
+    <EditText
+        android:id="@+id/case_type"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="5dp"
+        android:background="#30ffffff"
+        android:drawablePadding="20dp"
+        android:hint="Case Type"
+        android:inputType="textPassword"
+        android:padding="15dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white" />
+
+    <EditText
+        android:id="@+id/case_charges"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/case_type"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="5dp"
+        android:background="#30ffffff"
+        android:drawablePadding="20dp"
+        android:hint="Case Charges"
+        android:padding="15dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white" />
+
+    <EditText
+        android:id="@+id/case_petitioner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/case_charges"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="5dp"
+        android:background="#30ffffff"
+        android:drawablePadding="20dp"
+        android:hint="Case Petitioner"
+        android:padding="15dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white" />
+
+    <EditText
+        android:id="@+id/case_reponder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/case_petitioner"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="5dp"
+        android:background="#30ffffff"
+        android:drawablePadding="20dp"
+        android:hint="Case Responder"
+        android:padding="15dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white" />
+
+
+    <Button
+        android:id="@+id/button_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/case_reponder"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="12dp"
+        android:text="Submit"
+        android:textColor="@color/white"
+        android:textSize="20dp" />
+
+
+
+
 
 </RelativeLayout>

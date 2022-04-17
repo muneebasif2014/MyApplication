@@ -4,53 +4,89 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".location_case">
+    tools:context=".casee"
+    android:background="@drawable/download"
+    android:orientation="horizontal">
+
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:id="@+id/location_linerar"
-        android:padding="8pt"
-        android:layout_marginTop="20pt">
-        <EditText
+        android:layout_height="100dp">
+
+        <TextView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="court name"
-            android:textSize="14pt"
-
-            />
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="city"
-            android:textSize="14pt"
-
-            android:layout_marginTop="5pt"
-            />
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="judge name"
-            android:textSize="14pt"
-
-            android:layout_marginTop="5pt"
-            />
-
-
-
-
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:text="submit"
-            android:backgroundTint="#9FAAA8"
-            android:textSize="14pt"
-            android:layout_marginTop="5pt"
-            />
-
-
+            android:layout_height="match_parent"
+            android:layout_marginTop="30dp"
+            android:gravity="center_horizontal"
+            android:text="Case Location Details"
+            android:textColor="@color/white"
+            android:textSize="30dp"
+            android:textStyle="bold" />
     </LinearLayout>
+
+
+    <EditText
+        android:id="@+id/court_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="5dp"
+        android:background="#30ffffff"
+        android:drawablePadding="20dp"
+        android:hint="Court name"
+        android:inputType="textPassword"
+        android:padding="15dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white" />
+
+    <EditText
+        android:id="@+id/city"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/court_name"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="5dp"
+        android:background="#30ffffff"
+        android:drawablePadding="20dp"
+        android:hint="city"
+        android:padding="15dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white" />
+
+    <EditText
+        android:id="@+id/Judge_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/city"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="5dp"
+        android:background="#30ffffff"
+        android:drawablePadding="20dp"
+        android:hint="Judge name"
+        android:padding="15dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white" />
+
+
+
+
+    <Button
+        android:id="@+id/button_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Judge_name"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="12dp"
+        android:text="Submit"
+        android:textColor="@color/white"
+        android:textSize="20dp" />
+
+
 
 
 

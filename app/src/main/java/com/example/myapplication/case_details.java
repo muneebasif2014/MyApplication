@@ -18,12 +18,12 @@ EditText t1,t2,t3,t4;
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_case_details);
-        button = (Button) findViewById(R.id.button2);
+        button = (Button) findViewById(R.id.button_login);
 
-        t1 = (EditText)findViewById(R.id.casetype);
-        t2 = (EditText)findViewById(R.id.casecharges);
-        t3 = (EditText)findViewById(R.id.casepetitioner);
-        t4 = (EditText)findViewById(R.id.caseresponder);
+        t1 = (EditText)findViewById(R.id.case_type);
+        t2 = (EditText)findViewById(R.id.case_charges);
+        t3 = (EditText)findViewById(R.id.case_petitioner);
+        t4 = (EditText)findViewById(R.id.case_reponder);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

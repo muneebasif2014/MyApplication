@@ -18,10 +18,10 @@ EditText t1,t2,t3;
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_opponent_details);
-        button = (Button) findViewById(R.id.button3);
-        t1 = (EditText) findViewById(R.id.opponentname);
-        t2 = (EditText) findViewById(R.id.oppolawyer) ;
-        t3 = (EditText) findViewById(R.id.oppcontact) ;
+        button = (Button) findViewById(R.id.button_login);
+        t1 = (EditText) findViewById(R.id.opponent_name);
+        t2 = (EditText) findViewById(R.id.opponent_lawyer) ;
+        t3 = (EditText) findViewById(R.id.opponent_contact) ;
         String case_num = getIntent().getStringExtra("keycasenumber");
         button.setOnClickListener(new View.OnClickListener() {
             @Override

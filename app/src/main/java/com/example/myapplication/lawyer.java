@@ -20,14 +20,14 @@ public class lawyer extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_lawyer);
 
-        t1= (EditText) findViewById(R.id.lawerid);
-        t2= (EditText) findViewById(R.id.laywername);
+        t1= (EditText) findViewById(R.id.lawyerid);
+        t2= (EditText) findViewById(R.id.lawyername);
         t3= (EditText) findViewById(R.id.lawyernumber);
-        t4= (EditText) findViewById(R.id.layweradd);
-        t5= (EditText) findViewById(R.id.lawyercatag);
-        t6= (EditText) findViewById(R.id.laywerremarks);
+        t4= (EditText) findViewById(R.id.address);
+        t5= (EditText) findViewById(R.id.category);
+        t6= (EditText) findViewById(R.id.remarks);
 
-        b1= (Button) findViewById(R.id.button1);
+        b1= (Button) findViewById(R.id.button_login);
         b1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

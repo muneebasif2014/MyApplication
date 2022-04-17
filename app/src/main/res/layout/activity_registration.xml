@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#123456"
+    android:background="@drawable/download"
     android:orientation="vertical"
     android:gravity="center_horizontal">
 
@@ -15,9 +15,9 @@
         android:textStyle="bold"
         android:textSize="35dp"
         android:id="@+id/img"
-        android:textAlignment="center"
         android:textColor="@color/white"
-        android:layout_marginTop="30dp"/>
+        android:layout_marginTop="30dp"
+        android:gravity="center_horizontal" />
 
     <ImageView
         android:id="@+id/imageview"
@@ -29,7 +29,7 @@
         android:src="@drawable/lawyer" />
 
     <EditText
-        android:id="@+id/edittext_username"
+        android:id="@+id/email"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/imageview"
@@ -40,16 +40,16 @@
         android:background="#30ffffff"
         android:drawableLeft="@drawable/ic_baseline_person_outline_24"
         android:drawablePadding="20dp"
-        android:hint="email"
-        android:padding="20dp"
+        android:hint="Email"
+        android:padding="15dp"
         android:textColor="@color/white"
         android:textColorHint="@color/white" />
 
     <EditText
-        android:id="@+id/edittext_password"
+        android:id="@+id/password"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/edittext_username"
+        android:layout_below="@id/email"
         android:layout_marginStart="10dp"
         android:layout_marginTop="10dp"
         android:layout_marginEnd="10dp"
@@ -59,14 +59,15 @@
         android:drawablePadding="20dp"
         android:hint="Password"
         android:inputType="textPassword"
-        android:padding="20dp"
+        android:padding="15dp"
         android:textColor="@color/white"
         android:textColorHint="@color/white" />
+
     <EditText
-        android:id="@+id/edittext_cnf_password"
+        android:id="@+id/repassword"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/edittext_password"
+        android:layout_below="@id/password"
         android:layout_marginStart="10dp"
         android:layout_marginTop="10dp"
         android:layout_marginEnd="10dp"
@@ -76,35 +77,31 @@
         android:drawablePadding="20dp"
         android:hint="Re-enter-password"
         android:inputType="textPassword"
-        android:padding="20dp"
+        android:padding="15dp"
         android:textColor="@color/white"
         android:textColorHint="@color/white" />
 
     <Button
-        android:id="@+id/button_register"
+        android:id="@+id/btnsignup"
         android:layout_width="206dp"
         android:layout_height="40dp"
-        android:layout_below="@+id/edittext_cnf_password"
+        android:layout_below="@+id/repassword"
         android:layout_centerInParent="true"
         android:layout_marginTop="20dp"
-        android:background="#04ea00"
-        android:backgroundTint="@color/purple_200"
+
+        android:background="?android:attr/selectableItemBackground"
         android:text="@string/register"
         android:textColor="#ffffff" />
 
-
-    <TextView
-        android:id="@+id/textview_login"
-        android:layout_width="wrap_content"
-        android:layout_height="35dp"
-        android:layout_below="@+id/button_register"
+    <Button
+        android:id="@+id/btnsignin"
+        android:layout_width="206dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/btnsignup"
         android:layout_centerInParent="true"
-        android:layout_marginTop="30dp"
-        android:text="already_registered? Login Here"
+        android:layout_marginTop="2dp"
+        android:background="?android:attr/selectableItemBackground"
+        android:text="@string/sign_in"
         android:textColor="#ffffff" />
-
-
-
-
 
 </RelativeLayout>

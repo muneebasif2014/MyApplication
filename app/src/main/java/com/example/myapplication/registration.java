@@ -25,7 +25,7 @@ public class registration extends AppCompatActivity {
     EditText mTextPassword;
     EditText mTextCnfPassword;
     Button mButtonRegister;
-    TextView mTextViewLogin;
+    Button mButtonsignin;
     String emailPattern = "[a-zA-Z0-9._-]+@[a-z]+\\.+[a-z]+";
     FirebaseAuth mAuth;
     FirebaseUser mUser;
@@ -38,15 +38,15 @@ public class registration extends AppCompatActivity {
         setContentView(R.layout.activity_registration);
 
 
-        mTextUsername = (EditText)findViewById(R.id.edittext_username);
-        mTextPassword = (EditText)findViewById(R.id.edittext_password);
-        mTextCnfPassword = (EditText)findViewById(R.id.edittext_cnf_password);
-        mButtonRegister = (Button)findViewById(R.id.button_register);
-        mTextViewLogin = (TextView)findViewById(R.id.textview_login);
+        mTextUsername = (EditText)findViewById(R.id.email);
+        mTextPassword = (EditText)findViewById(R.id.password);
+        mTextCnfPassword = (EditText)findViewById(R.id.repassword);
+        mButtonRegister = (Button)findViewById(R.id.btnsignup);
+        mButtonsignin = (Button)findViewById(R.id.btnsignin);
         mAuth= FirebaseAuth.getInstance();
         mUser=mAuth.getCurrentUser();
 
-        mTextViewLogin.setOnClickListener(new View.OnClickListener() {
+        mButtonsignin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent LoginIntent = new Intent(registration.this,LoginActivity.class);
@@ -93,12 +93,12 @@ public class registration extends AppCompatActivity {
         }
         else if (pwd.isEmpty() || pwd.length()<6)
         {
-            mTextUsername.setError("enter proper pasward");
+            mTextUsername.setError("enter proper password");
             mTextUsername.requestFocus();
         }
         else if (!pwd.equals(cnf_pwd))
         {
-            mTextCnfPassword.setError("pasward not matched");
+            mTextCnfPassword.setError("password not matched");
             mTextCnfPassword.requestFocus();
         }
         else
@@ -109,7 +109,10 @@ public class registration extends AppCompatActivity {
                    if (task.isSuccessful())
                    {
                        Toast.makeText(registration.this,"regestraion sucessfull ",Toast.LENGTH_SHORT).show();
+                       Intent intent = new Intent(getApplicationContext(),LoginActivity.class);
+                       startActivity(intent);
                        sendUserTonextactivity();
+
                    }
                    else
                    {

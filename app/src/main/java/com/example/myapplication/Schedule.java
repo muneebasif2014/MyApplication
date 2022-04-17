@@ -30,13 +30,13 @@ public class Schedule extends AppCompatActivity {
         ArrayAdapter<String> adapter = new ArrayAdapter<>(this, android.R.layout.simple_spinner_dropdown_item, items);
 
         dropdown.setAdapter(adapter);
-        t1= (EditText) findViewById(R.id.case_status);
+        t1= (EditText) findViewById(R.id.casestatus);
         t2= (EditText) findViewById(R.id.clientname);
-        t3= (EditText) findViewById(R.id.casenum);
+        t3= (EditText) findViewById(R.id.casenumber);
         t4= (EditText) findViewById(R.id.casename);
         t5= (EditText) findViewById(R.id.casedate);
-        t6= (EditText) findViewById(R.id.scremsrk);
-      b2= (Button) findViewById(R.id.button1);
+        t6= (EditText) findViewById(R.id.remarks);
+      b2= (Button) findViewById(R.id.button_login);
       b2.setOnClickListener(new View.OnClickListener() {
           @Override
           public void onClick(View view) {

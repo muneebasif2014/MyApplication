@@ -21,13 +21,13 @@ public class clinte extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_clinte);
 
-        t1= (EditText) findViewById(R.id.clinte_name);
-        t2= (EditText) findViewById(R.id.Add_clinte);
-        t3= (EditText) findViewById(R.id.city_clinte);
-        t4= (EditText) findViewById(R.id.num_clinte);
-        t5= (EditText) findViewById(R.id.emil_clinte);
-        t6= (EditText) findViewById(R.id.remarks_clinte);
-        b2= (Button) findViewById(R.id.button_clinte);
+        t1= (EditText) findViewById(R.id.name);
+        t2= (EditText) findViewById(R.id.email);
+        t3= (EditText) findViewById(R.id.number);
+        t4= (EditText) findViewById(R.id.address);
+        t5= (EditText) findViewById(R.id.city);
+        t6= (EditText) findViewById(R.id.remarks);
+        b2= (Button) findViewById(R.id.button_login);
 
         b2.setOnClickListener(new View.OnClickListener() {
             @Override

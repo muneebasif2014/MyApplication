@@ -20,12 +20,12 @@ public class UPdate extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_update);
 
-        t1= (EditText) findViewById(R.id.case_status_up);
-        t2= (EditText) findViewById(R.id.up_CASe_num);
-        t3= (EditText) findViewById(R.id.up_case_name);
-        t4= (EditText) findViewById(R.id.up_cASe_date);
-        t5= (EditText) findViewById(R.id.Up_update);
-        b2= (Button) findViewById(R.id.button_up);
+        t1= (EditText) findViewById(R.id.cases_status);
+        t2= (EditText) findViewById(R.id.case_number);
+        t3= (EditText) findViewById(R.id.case_name);
+        t4= (EditText) findViewById(R.id.case_date);
+        t5= (EditText) findViewById(R.id.update);
+        b2= (Button) findViewById(R.id.button_login);
 
         b2.setOnClickListener(new View.OnClickListener() {
             @Override
