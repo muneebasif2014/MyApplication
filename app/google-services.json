@@ -1,6 +1,7 @@
 {
   "project_info": {
     "project_number": "1086726265964",
+    "firebase_url": "https://lawyer-dairy-default-rtdb.firebaseio.com",
     "project_id": "lawyer-dairy",
     "storage_bucket": "lawyer-dairy.appspot.com"
   },

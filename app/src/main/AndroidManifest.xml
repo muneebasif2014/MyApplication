@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
+            android:name=".userlist"
+            android:exported="false" />
+        <activity
             android:name=".splash"
             android:exported="true">
             <intent-filter>
@@ -25,7 +28,6 @@
             android:name=".registration"
             android:exported="false" />
         <activity
-
             android:name=".UPdate"
             android:exported="false" />
         <activity
@@ -58,11 +60,6 @@
         <activity
             android:name=".mainpage"
             android:exported="false" />
-        <activity
-            android:name=".fragment"
-            android:exported="false" />
-
-
     </application>
 
 </manifest>
