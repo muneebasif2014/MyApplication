@@ -17,6 +17,7 @@
             android:layout_width="120dp"
             android:layout_height="120dp"
             android:src="@mipmap/ic_launcher" />
+
         <TextView
             android:id="@+id/nametext"
             android:layout_width="match_parent"
@@ -27,35 +28,38 @@
             android:textColor="#000"
             android:textSize="25sp"
             android:textStyle="bold" />
+
         <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
             android:id="@+id/addrs"
-            android:text="address"
-            android:textSize="25sp"
-            android:textColor="#000"
-            android:layout_toRightOf="@id/img1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:layout_below="@id/nametext"
-            android:layout_marginLeft="10dp"/>
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/img1"
+            android:text="address"
+            android:textColor="#000"
+            android:textSize="25sp" />
+
         <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
             android:id="@+id/numbr"
-            android:text="number"
-            android:textSize="25sp"
-            android:textColor="#000"
-            android:layout_toRightOf="@id/img1"
-            android:layout_below="@id/addrs"
-            android:layout_marginLeft="10dp"/>
-        <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/catagory"
-            android:text="Category"
-            android:textSize="25sp"
-            android:textColor="#000"
+            android:layout_below="@id/addrs"
+            android:layout_marginLeft="10dp"
             android:layout_toRightOf="@id/img1"
+            android:text="number"
+            android:textColor="#000"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/catagory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:layout_below="@id/numbr"
-            android:layout_marginLeft="10dp"/>
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/img1"
+            android:text="Category"
+            android:textColor="#000"
+            android:textSize="25sp" />
     </RelativeLayout>
 </androidx.cardview.widget.CardView>

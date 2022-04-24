@@ -3,9 +3,15 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/MyApplication/app/src/main/res/layout/activity_case_details.xml" value="0.2" />
+        <entry key="..\:/MyApplication/app/src/main/res/layout/activity_casee.xml" value="0.2" />
+        <entry key="..\:/MyApplication/app/src/main/res/layout/activity_clinte.xml" value="0.2" />
         <entry key="..\:/MyApplication/app/src/main/res/layout/activity_fragment.xml" value="0.19583333333333333" />
-        <entry key="..\:/MyApplication/app/src/main/res/layout/activity_lawyer.xml" value="0.15" />
+        <entry key="..\:/MyApplication/app/src/main/res/layout/activity_lawyer.xml" value="0.18" />
+        <entry key="..\:/MyApplication/app/src/main/res/layout/activity_login.xml" value="0.2" />
+        <entry key="..\:/MyApplication/app/src/main/res/layout/activity_main.xml" value="0.2" />
         <entry key="..\:/MyApplication/app/src/main/res/layout/activity_mainfragment.xml" value="0.19583333333333333" />
+        <entry key="..\:/MyApplication/app/src/main/res/layout/activity_registration.xml" value="0.2" />
         <entry key="..\:/MyApplication/app/src/main/res/layout/activity_schedule.xml" value="0.19583333333333333" />
         <entry key="..\:/MyApplication/app/src/main/res/layout/activity_splash.xml" value="0.19583333333333333" />
         <entry key="..\:/MyApplication/app/src/main/res/layout/activity_update.xml" value="0.19583333333333333" />

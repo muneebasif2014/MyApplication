@@ -92,7 +92,7 @@ public class login extends AppCompatActivity {
                 public void onComplete(@NonNull Task<AuthResult> task) {
                     if(task.isSuccessful())
                     {
-                        Toast.makeText(login.this,"regestraion sucessfull ",Toast.LENGTH_SHORT).show();
+                        Toast.makeText(login.this,"registration successfull ",Toast.LENGTH_SHORT).show();
                         sendUserTonextactivity();
                     }
                     else

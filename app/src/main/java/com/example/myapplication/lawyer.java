@@ -47,13 +47,9 @@ public class lawyer extends AppCompatActivity {
                 Toast.makeText(getApplicationContext(),"data insert", Toast.LENGTH_LONG).show();
             }
         });
-        Button button=(Button)findViewById(R.id.viewdata);
-        button.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(lawyer.this,userlist.class);
-                startActivity(intent);
-            }
-        });
+
+
+
+
     }
 }

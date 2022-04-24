@@ -7,6 +7,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
 
+import com.firebase.ui.database.FirebaseRecyclerOptions;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -18,41 +19,36 @@ import java.util.ArrayList;
 public class userlist extends AppCompatActivity {
 
     RecyclerView recyclerView;
-    DatabaseReference database;
-    myadapter myadapter;
-    ArrayList<model> list;
-
+    MainAdapter mainAdapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_userlist);
 
-        recyclerView=findViewById(R.id.recyclerview);
-        database= FirebaseDatabase.getInstance().getReference("Lawyer");
-        recyclerView.setHasFixedSize(true);
+        recyclerView = (RecyclerView) findViewById(R.id.recyclerviews);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
 
-        list = new ArrayList<>();
-        myadapter= new myadapter(this,list);
-        recyclerView.setAdapter(myadapter);
-        database.addValueEventListener(new ValueEventListener() {
-            @Override
-            public void onDataChange(@NonNull DataSnapshot snapshot) {
-                for(DataSnapshot dataSnapshot:snapshot.getChildren()){
-                    model model= dataSnapshot.getValue(model.class);
-                    list.add(model);
-                }
+        FirebaseRecyclerOptions<model> options=
+                new FirebaseRecyclerOptions.Builder<model>()
+                        .setQuery(FirebaseDatabase.getInstance().getReference().child("Lawyer"),model.class)
+                        .build();
 
-                myadapter.notifyDataSetChanged();
-            }
-
-            @Override
-            public void onCancelled(@NonNull DatabaseError error) {
-
-            }
-        });
-
+        mainAdapter=new MainAdapter(options);
+        recyclerView.setAdapter(mainAdapter);
 
     }
+
+    @Override
+    protected void onStart() {
+        super.onStart();
+        mainAdapter.startListening();
+    }
+
+    @Override
+    protected void onStop() {
+        super.onStop();
+        mainAdapter.stopListening();
+    }
 }
+

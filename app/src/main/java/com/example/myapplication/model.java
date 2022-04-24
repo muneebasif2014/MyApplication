@@ -2,16 +2,19 @@ package com.example.myapplication;
 
 public class model {
 
-    String addr,catag,name,number;
+    String addr,catag,name,num;
 
-    public model() {
+    model()
+    {
+
+
     }
 
-    public model(String addr, String catag, String name, String number) {
+    public model(String addr, String catag, String name, String num) {
         this.addr = addr;
         this.catag = catag;
         this.name = name;
-        this.number = number;
+        this.num = num;
     }
 
     public String getAddr() {
@@ -38,11 +41,13 @@ public class model {
         this.name = name;
     }
 
-    public String getNumber() {
-        return number;
+    public String getNum() {
+        return num;
     }
 
-    public void setNumber(String number) {
-        this.number = number;
+    public void setNum(String num) {
+        this.num = num;
     }
 }
+
+

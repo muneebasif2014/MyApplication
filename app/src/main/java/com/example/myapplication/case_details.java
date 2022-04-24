@@ -33,7 +33,7 @@ EditText t1,t2,t3,t4;
                 String case_petitioner= t3.getText().toString();
                 String case_responder= t4.getText().toString();
                 String case_numb = getIntent().getStringExtra("keycasenumber");
-case_detail_Dataholder obj = new case_detail_Dataholder(case_type , case_charges ,     case_petitioner   , case_responder);
+                case_detail_Dataholder obj = new case_detail_Dataholder(case_type , case_charges ,     case_petitioner   , case_responder);
                 FirebaseDatabase db = FirebaseDatabase.getInstance();
                 DatabaseReference node = db.getReference("casee_opponent_detail");
 
