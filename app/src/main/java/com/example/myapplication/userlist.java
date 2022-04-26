@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.database.Cursor;
 import android.os.Bundle;
 
 import com.firebase.ui.database.FirebaseRecyclerOptions;
@@ -19,7 +20,7 @@ import java.util.ArrayList;
 public class userlist extends AppCompatActivity {
 
     RecyclerView recyclerView;
-    MainAdapter mainAdapter;
+    ArrayList<model> dataholder;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,26 +30,22 @@ public class userlist extends AppCompatActivity {
         recyclerView = (RecyclerView) findViewById(R.id.recyclerviews);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
 
-        FirebaseRecyclerOptions<model> options=
-                new FirebaseRecyclerOptions.Builder<model>()
-                        .setQuery(FirebaseDatabase.getInstance().getReference().child("Lawyer"),model.class)
-                        .build();
+        Cursor cursor=new DBHelper(this).readalldata();
+        dataholder=new ArrayList<>();
 
-        mainAdapter=new MainAdapter(options);
-        recyclerView.setAdapter(mainAdapter);
+        while(cursor.moveToNext())
+        {
+            model obj=new model(cursor.getString(1),cursor.getString(2),cursor.getString(3));
+            dataholder.add(obj);
+        }
+
+        myadapter adapter=new myadapter(dataholder);
+        recyclerView.setAdapter(adapter);
 
     }
 
-    @Override
-    protected void onStart() {
-        super.onStart();
-        mainAdapter.startListening();
     }
 
-    @Override
-    protected void onStop() {
-        super.onStop();
-        mainAdapter.stopListening();
-    }
-}
+
+
 

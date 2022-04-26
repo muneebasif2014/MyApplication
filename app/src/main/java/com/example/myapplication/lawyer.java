@@ -13,7 +13,7 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
 public class lawyer extends AppCompatActivity {
-    Button b1;
+    Button b1,b2;
     EditText t1,t2,t3,t4,t5,t6,t7;
 
     @Override
@@ -28,28 +28,40 @@ public class lawyer extends AppCompatActivity {
         t5= (EditText) findViewById(R.id.category);
         t6= (EditText) findViewById(R.id.remarks);
 
-
         b1= (Button) findViewById(R.id.button_login);
+        b2=(Button)findViewById(R.id.viewdata);
         b1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                String id = t1.getText().toString();
-                String name = t2.getText().toString();
-                String num = t3.getText().toString();
-                String addr = t4.getText().toString();
-                String catag = t5.getText().toString();
-                String rem = t6.getText().toString();
 
-                Lawyer_details_dataholder obj = new Lawyer_details_dataholder(name, num, addr,catag,rem);
-                FirebaseDatabase db = FirebaseDatabase.getInstance();
-                DatabaseReference node = db.getReference("Lawyer");
-                node.child(id).setValue(obj);
-                Toast.makeText(getApplicationContext(),"data insert", Toast.LENGTH_LONG).show();
+                processinsert(t1.getText().toString(),t2.getText().toString(),t3.getText().toString(),t4.getText().toString(),t5.getText().toString(),t6.getText().toString());
             }
         });
 
 
+        b2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(getApplicationContext(),userlist.class));
+            }
+        });
 
 
     }
+
+    private void processinsert(String s, String n, String nb, String a, String c, String r)
+    {
+        String res=new DBHelper(this).addrecord(n,nb,a,c,r);
+        t1.setText("");
+        t2.setText("");
+        t3.setText("");
+        t4.setText("");
+        t5.setText("");
+        t6.setText("");
+        Toast.makeText(getApplicationContext(),res,Toast.LENGTH_SHORT).show();
+    }
+
+
 }
+
+

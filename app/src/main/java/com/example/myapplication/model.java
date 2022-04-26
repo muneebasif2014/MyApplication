@@ -2,35 +2,14 @@ package com.example.myapplication;
 
 public class model {
 
-    String addr,catag,name,num;
+    String name,number,address,category,remarks;
 
-    model()
-    {
-
-
-    }
-
-    public model(String addr, String catag, String name, String num) {
-        this.addr = addr;
-        this.catag = catag;
+    public model(String name, String number, String address) {
         this.name = name;
-        this.num = num;
-    }
-
-    public String getAddr() {
-        return addr;
-    }
-
-    public void setAddr(String addr) {
-        this.addr = addr;
-    }
-
-    public String getCatag() {
-        return catag;
-    }
-
-    public void setCatag(String catag) {
-        this.catag = catag;
+        this.number = number;
+        this.address = address;
+        this.category = category;
+        this.remarks = remarks;
     }
 
     public String getName() {
@@ -41,13 +20,36 @@ public class model {
         this.name = name;
     }
 
-    public String getNum() {
-        return num;
+    public String getNumber() {
+        return number;
     }
 
-    public void setNum(String num) {
-        this.num = num;
+    public void setNumber(String number) {
+        this.number = number;
+    }
+
+    public String getAddress() {
+        return address;
+    }
+
+    public void setAddress(String address) {
+        this.address = address;
+    }
+
+    public String getCategory() {
+        return category;
+    }
+
+    public void setCategory(String category) {
+        this.category = category;
+    }
+
+    public String getRemarks() {
+        return remarks;
+    }
+
+    public void setRemarks(String remarks) {
+        this.remarks = remarks;
     }
 }
-
 

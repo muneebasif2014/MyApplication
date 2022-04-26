@@ -13,10 +13,10 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".splash"
+            android:name=".userlist"
             android:exported="false" />
         <activity
-            android:name=".userlist"
+            android:name=".splash"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -56,9 +56,6 @@
             android:exported="false" />
         <activity
             android:name=".casee"
-            android:exported="false" />
-        <activity
-            android:name=".MainActivity"
             android:exported="false" />
         <activity
             android:name=".mainpage"
