@@ -34,6 +34,7 @@ public class myadapter extends RecyclerView.Adapter<myadapter.myviewholder>
         holder.daddress.setText(dataholder.get(position).getAddress());
         holder.dcategory.setText(dataholder.get(position).getCategory());
         holder.dremarks.setText(dataholder.get(position).getRemarks());
+
     }
 
     @Override
