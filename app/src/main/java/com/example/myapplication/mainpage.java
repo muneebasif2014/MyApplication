@@ -1,11 +1,11 @@
 package com.example.myapplication;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 public class mainpage extends AppCompatActivity {
     public TextView textView , text, text2 , txt3, txt4;
@@ -28,7 +28,7 @@ public class mainpage extends AppCompatActivity {
     text.setOnClickListener(new View.OnClickListener() {
         @Override
         public void onClick(View view) {
-            Intent intent = new Intent(mainpage.this, lawyer.class);
+            Intent intent = new Intent(mainpage.this, MainActivity.class);
             startActivity(intent);
         }
     });

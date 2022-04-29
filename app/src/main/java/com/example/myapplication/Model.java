@@ -1,15 +1,31 @@
 package com.example.myapplication;
 
-public class model {
+public class Model {
+    private int id;
+    private String name;
+    private String number;
+    private String address;
+    private String category;
+    private String remarks;
+    //generate constructor
 
-    String name,number,address,category,remarks;
-
-    public model(String name, String number, String address) {
+    public Model(int id, String name, String number,String address ,String category ,String remarks) {
+        this.id = id;
         this.name = name;
         this.number = number;
-        this.address = address;
-        this.category = category;
-        this.remarks = remarks;
+        this.address=address;
+        this.category=category;
+        this.remarks=remarks;
+    }
+    //generate getter and setter
+
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 
     public String getName() {

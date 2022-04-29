@@ -1,107 +1,123 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/download"
     android:orientation="vertical"
-    android:gravity="center_horizontal">
+    android:background="@drawable/download"
+    tools:context=".MainActivity">
 
-    <TextView
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="The Lawyer diary"
-        android:textStyle="bold"
-        android:textSize="35dp"
-        android:id="@+id/img"
-        android:textColor="@color/white"
-        android:layout_marginTop="30dp"
-        android:gravity="center_horizontal" />
+        android:layout_height="100dp">
 
-    <ImageView
-        android:id="@+id/imageview"
-        android:layout_width="wrap_content"
-        android:layout_height="100dp"
-        android:layout_below="@+id/img"
-        android:layout_centerInParent="true"
-        android:layout_marginTop="12dp"
-        android:src="@drawable/lawyer" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="30dp"
+            android:gravity="center_horizontal"
+            android:text="Lawyer Details"
+            android:textSize="30dp"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+    </LinearLayout>
 
     <EditText
-        android:id="@+id/username"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/imageview"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="5dp"
+        android:background="#30ffffff"
+        android:drawablePadding="20dp"
+        android:padding="15dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:id="@+id/name"
+        android:hint=" lawyer Name"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
         android:layout_marginTop="10dp"
         android:layout_marginEnd="10dp"
         android:layout_marginBottom="5dp"
         android:background="#30ffffff"
-        android:drawableLeft="@drawable/ic_baseline_person_outline_24"
         android:drawablePadding="20dp"
-        android:hint="Username"
-        android:padding="20dp"
+        android:padding="15dp"
         android:textColor="@color/white"
-        android:textColorHint="@color/white"/>
-
+        android:textColorHint="@color/white"
+        android:id="@+id/number"
+        android:hint="lawyer number"/>
     <EditText
-        android:id="@+id/password"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/username"
         android:layout_marginStart="10dp"
         android:layout_marginTop="10dp"
         android:layout_marginEnd="10dp"
         android:layout_marginBottom="5dp"
         android:background="#30ffffff"
-        android:drawableLeft="@drawable/ic_baseline_info_24"
         android:drawablePadding="20dp"
-        android:hint="Password"
-        android:inputType="textPassword"
-        android:padding="20dp"
+        android:padding="15dp"
         android:textColor="@color/white"
-        android:textColorHint="@color/white"/>
-
+        android:textColorHint="@color/white"
+        android:id="@+id/address"
+        android:hint="lawyer address"/>
     <EditText
-        android:id="@+id/repassword"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/password"
         android:layout_marginStart="10dp"
         android:layout_marginTop="10dp"
         android:layout_marginEnd="10dp"
         android:layout_marginBottom="5dp"
         android:background="#30ffffff"
-        android:drawableLeft="@drawable/ic_baseline_info_24"
         android:drawablePadding="20dp"
-        android:hint="Re-enter-password"
-        android:inputType="textPassword"
-        android:padding="20dp"
+        android:padding="15dp"
         android:textColor="@color/white"
-        android:textColorHint="@color/white"/>
+        android:textColorHint="@color/white"
+        android:id="@+id/category"
+        android:hint="lawyer category"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="5dp"
+        android:background="#30ffffff"
+        android:drawablePadding="20dp"
+        android:padding="15dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:id="@+id/remarks"
+        android:hint="remarks"/>
 
-    <Button
-        android:id="@+id/btnsignup"
-        android:layout_width="206dp"
-        android:layout_height="40dp"
-        android:layout_below="@+id/repassword"
-        android:layout_centerInParent="true"
-        android:layout_marginTop="20dp"
-        android:background="?android:attr/selectableItemBackground"
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginTop="30dp"
+            android:text="Submit"
+            android:id="@+id/submit_btn"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
 
-        android:text="@string/register"
-        android:textColor="#ffffff" />
-
-    <Button
-        android:id="@+id/btnsignin"
-        android:layout_width="206dp"
-        android:layout_height="40dp"
-        android:layout_below="@+id/btnsignup"
-        android:layout_centerInParent="true"
-        android:layout_marginTop="2dp"
-        android:background="?android:attr/selectableItemBackground"
-        android:text="@string/sign_in"
-        android:textColor="#ffffff" />
-
-</RelativeLayout>
+            android:id="@+id/display_btn"
+            android:text="View data"
+            android:layout_weight="1"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:id="@+id/edit_btn"
+            android:text="Edit"
+            android:visibility="gone"/>
+    </LinearLayout>
+</LinearLayout>
