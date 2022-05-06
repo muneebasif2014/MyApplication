@@ -90,7 +90,7 @@ public class MyAdater extends RecyclerView.Adapter<MyAdater.ModelViewHolder> {
         Button edit,delete;
         public ModelViewHolder(@NonNull View itemView) {
             super(itemView);
-            name=(TextView)itemView.findViewById(R.id.name);
+            name=(TextView)itemView.findViewById(R.id.clientname);
             number=(TextView)itemView.findViewById(R.id.number);
             address=(TextView)itemView.findViewById(R.id.address);
             category=(TextView)itemView.findViewById(R.id.category);

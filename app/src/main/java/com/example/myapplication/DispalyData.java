@@ -47,6 +47,7 @@ public class DispalyData extends AppCompatActivity {
     }
 
     private void findid() {
+
         recyclerView=findViewById(R.id.rv);
     }
 }
