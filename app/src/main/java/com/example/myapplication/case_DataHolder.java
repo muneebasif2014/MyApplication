@@ -1,11 +1,12 @@
 package com.example.myapplication;
 
 public class case_DataHolder {
-    String case_status, clinte_name,case_name,case_date,remarks;
+    String case_status, clinte_name,case_number,case_name,case_date,remarks;
 
-    public case_DataHolder(String case_status, String clinte_name, String case_name, String case_date, String remarks) {
+    public case_DataHolder(String case_status, String clinte_name, String case_number, String case_name, String case_date, String remarks) {
         this.case_status = case_status;
         this.clinte_name = clinte_name;
+        this.case_number = case_number;
         this.case_name = case_name;
         this.case_date = case_date;
         this.remarks = remarks;
@@ -25,6 +26,14 @@ public class case_DataHolder {
 
     public void setClinte_name(String clinte_name) {
         this.clinte_name = clinte_name;
+    }
+
+    public String getCase_number() {
+        return case_number;
+    }
+
+    public void setCase_number(String case_number) {
+        this.case_number = case_number;
     }
 
     public String getCase_name() {

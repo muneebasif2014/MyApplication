@@ -1,6 +1,6 @@
 package com.example.myapplication;
 
-import static com.example.myapplication.DBmain.TABLENAME;
+import static com.example.myapplication.DBmain_casee.Casee1;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
@@ -19,13 +19,13 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.ArrayList;
 
-public class MyAdater extends RecyclerView.Adapter<MyAdater.ModelViewHolder> {
+ class MyAdapter_casee extends RecyclerView.Adapter<MyAdapter_casee.ModelViewHolder> {
     Context context;
-    ArrayList<Model>modelArrayList=new ArrayList<>();
+    ArrayList<case_DataHolder> modelArrayList=new ArrayList<>();
     SQLiteDatabase sqLiteDatabase;
     //generate constructor
 
-    public MyAdater(Context context, int singledata, ArrayList<Model> modelArrayList, SQLiteDatabase sqLiteDatabase) {
+    public MyAdapter_casee(Context context, int singledata, ArrayList<case_DataHolder> modelArrayList, SQLiteDatabase sqLiteDatabase) {
         this.context = context;
         this.modelArrayList = modelArrayList;
         this.sqLiteDatabase = sqLiteDatabase;
@@ -33,20 +33,21 @@ public class MyAdater extends RecyclerView.Adapter<MyAdater.ModelViewHolder> {
 
 
     @Override
-    public MyAdater.ModelViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
+    public MyAdapter_casee.ModelViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         LayoutInflater inflater=LayoutInflater.from(context);
-        View view=inflater.inflate(R.layout.singledata,null);
+        View view=inflater.inflate(R.layout.singledata_casee,null);
         return new ModelViewHolder(view);
     }
 
     @Override
-    public void onBindViewHolder(MyAdater.ModelViewHolder holder, @SuppressLint("RecyclerView") int position) {
-        final Model model=modelArrayList.get(position);
-        holder.name.setText(model.getName());
-        holder.number.setText(model.getNumber());
-        holder.address.setText(model.getAddress());
-        holder.category.setText(model.getCategory());
-        holder.remarks.setText(model.getRemarks());
+    public void onBindViewHolder(MyAdapter_casee.ModelViewHolder holder, @SuppressLint("RecyclerView") int position) {
+        final case_DataHolder model = modelArrayList.get(position);
+        holder.t1.setText(model.getCase_status());
+        holder.t2.setText(model.getClinte_name());
+        holder.t3.setText(model.getCase_number());
+        holder.t4.setText(model.getCase_name());
+        holder.t5.setText(model.getCase_date());
+        holder.t6.setText(model.getRemarks());
 
 
         //click on button go to main activity
@@ -54,24 +55,24 @@ public class MyAdater extends RecyclerView.Adapter<MyAdater.ModelViewHolder> {
             @Override
             public void onClick(View v) {
                 Bundle bundle=new Bundle();
-                bundle.putInt("id",model.getId());
-                bundle.putString("name",model.getName());
-                bundle.putString("number",model.getNumber());
-                bundle.putString("address",model.getAddress());
-                bundle.putString("category",model.getCategory());
-                bundle.putString("remarks",model.getRemarks());
-                Intent intent=new Intent(context,MainActivity.class);
+                bundle.putString("case_status",model.getCase_status());
+                bundle.putString("clinte_name",model.getClinte_name());
+                bundle.putString("case_number",model.getCase_number());
+                bundle.putString("case_name",model.getCase_name());
+                bundle.putString("case_date",model.getCase_date());
+                bundle.putString("remarks_casee",model.getRemarks());
+                Intent intent=new Intent(context,casee.class);
                 intent.putExtra("userdata",bundle);
                 context.startActivity(intent);
             }
         });
         //delete row
         holder.delete.setOnClickListener(new View.OnClickListener() {
-            DBmain dBmain=new DBmain(context);
+            DBmain_casee dBmain= new DBmain_casee(context);
             @Override
             public void onClick(View v) {
                 sqLiteDatabase=dBmain.getReadableDatabase();
-                long delele=sqLiteDatabase.delete(TABLENAME,"id="+model.getId(),null);
+                long delele=sqLiteDatabase.delete(Casee1,"case_name="+model.getCase_number(),null);
                 if (delele!=-1){
                     Toast.makeText(context, "deleted data successfully", Toast.LENGTH_SHORT).show();
                     modelArrayList.remove(position);
@@ -86,15 +87,16 @@ public class MyAdater extends RecyclerView.Adapter<MyAdater.ModelViewHolder> {
     }
 
     public class ModelViewHolder extends RecyclerView.ViewHolder {
-        TextView name,number,address,category,remarks;
+        TextView t1,t2,t3,t4,t5,t6;
         Button edit,delete;
         public ModelViewHolder( View itemView) {
             super(itemView);
-            name=(TextView)itemView.findViewById(R.id.name_single);
-            number=(TextView)itemView.findViewById(R.id.number);
-            address=(TextView)itemView.findViewById(R.id.address);
-            category=(TextView)itemView.findViewById(R.id.category);
-            remarks=(TextView)itemView.findViewById(R.id.remarks);
+            t1=(TextView)itemView.findViewById(R.id.casee_status_casee);
+            t2=(TextView)itemView.findViewById(R.id.clientname_casee);
+            t3=(TextView)itemView.findViewById(R.id.casee_number_casee);
+           t4=(TextView)itemView.findViewById(R.id.casename_casee);
+            t5=(TextView)itemView.findViewById(R.id.casedate_casee);
+            t6=(TextView)itemView.findViewById(R.id.remarks_casee);
             edit=(Button)itemView.findViewById(R.id.txt_btn_edit);
             delete=(Button)itemView.findViewById(R.id.txt_btn_delete);
         }

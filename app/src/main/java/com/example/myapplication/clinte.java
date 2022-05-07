@@ -108,7 +108,7 @@ public class clinte extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-        edit.setOnClickListener(new View.OnClickListener() {
+      /*  edit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 ContentValues cv=new ContentValues();
@@ -129,7 +129,7 @@ public class clinte extends AppCompatActivity {
                     Toast.makeText(clinte.this, "something wrong try again", Toast.LENGTH_SHORT).show();
                 }
             }
-        });
+        });*/
     }
 
     private void findid() {
@@ -141,6 +141,8 @@ public class clinte extends AppCompatActivity {
         t5= (EditText) findViewById(R.id.city);
         t6= (EditText) findViewById(R.id.remarks);
         sunmite= (Button) findViewById(R.id.sumite_clinte);
+        display= (Button) findViewById(R.id.show_clinte);
+        edit= (Button) findViewById(R.id.edite_clinte);
     }
 
 

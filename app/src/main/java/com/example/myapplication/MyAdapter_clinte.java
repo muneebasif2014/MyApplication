@@ -32,18 +32,18 @@ public class MyAdapter_clinte extends RecyclerView.Adapter<MyAdapter_clinte.Mode
         this.sqLiteDatabase = sqLiteDatabase;
     }
 
-    @NonNull
+
     @Override
-    public MyAdapter_clinte.ModelViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+    public MyAdapter_clinte.ModelViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         LayoutInflater inflater=LayoutInflater.from(context);
         View view=inflater.inflate(R.layout.singledata,null);
         return new ModelViewHolder(view);
     }
 
     @Override
-    public void onBindViewHolder(@NonNull MyAdapter_clinte.ModelViewHolder holder,@SuppressLint("RecyclerView")  int position) {
+    public void onBindViewHolder( MyAdapter_clinte.ModelViewHolder holder,@SuppressLint("RecyclerView")  int position) {
         final clinte_dataholder model = modelArrayList.get(position);
-        holder.t1.setText(model.getClinte_name());
+      holder.t1.setText(model.getClinte_name());
         holder.t2.setText(model.getEmail_clinte());
         holder.t3.setText(model.getClinte_number());
         holder.t4.setText(model.getClinte_add());
@@ -56,10 +56,10 @@ public class MyAdapter_clinte extends RecyclerView.Adapter<MyAdapter_clinte.Mode
                 Bundle bundle=new Bundle();
 
                 bundle.putString("name",model.getClinte_name());
-                bundle.putString("number",model.getEmail_clinte());
-                bundle.putString("address",model.getClinte_number());
-                bundle.putString("remarks",model.getClinte_add());
-                bundle.putString("category",model.getClinte_city());
+                bundle.putString("email",model.getEmail_clinte());
+                bundle.putString("number",model.getClinte_number());
+                bundle.putString("addresse",model.getClinte_add());
+                bundle.putString("city",model.getClinte_city());
                 bundle.putString("remarks",model.getClinte_remarks());
                 Intent intent=new Intent(context,clinte.class);
                 intent.putExtra("userdata",bundle);
@@ -67,7 +67,7 @@ public class MyAdapter_clinte extends RecyclerView.Adapter<MyAdapter_clinte.Mode
             }
         });
     holder.delete.setOnClickListener(new View.OnClickListener() {
-        DBmain dBmain=new DBmain(context);
+        DBmain_clinte dBmain= new DBmain_clinte(context);
         @Override
         public void onClick(View view) {
             sqLiteDatabase=dBmain.getReadableDatabase();
@@ -90,7 +90,7 @@ public class MyAdapter_clinte extends RecyclerView.Adapter<MyAdapter_clinte.Mode
         TextView t1,t2,t3,t4,t5,t6;
         Button edit, delete;
 
-        public ModelViewHolder(@NonNull View itemView) {
+        public ModelViewHolder( View itemView) {
             super(itemView);
             t1 = (TextView) itemView.findViewById(R.id.name_clinte);
             t2 = (TextView) itemView.findViewById(R.id.email_clinte);
