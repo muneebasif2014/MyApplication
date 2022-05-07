@@ -1,7 +1,7 @@
 package com.example.myapplication;
 
-import static com.example.myapplication.DBmain.Clinte;
-import static com.example.myapplication.DBmain.TABLENAME;
+import static com.example.myapplication.DBmain_clinte.Clinte;
+
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -18,7 +18,7 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
 public class clinte extends AppCompatActivity {
-    DBmain dBmain;
+    DBmain_clinte dBmain;
     SQLiteDatabase sqLiteDatabase;
     EditText t1,t2,t3,t4,t5,t6;
     Button sunmite, display, edit;
@@ -28,7 +28,7 @@ public class clinte extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_clinte);
-        dBmain = new DBmain(this);
+        dBmain = new DBmain_clinte(this);
         //create method
         findid();
         insertData();
@@ -120,7 +120,7 @@ public class clinte extends AppCompatActivity {
                 cv.put("remarks",t6.getText().toString());
 
                 sqLiteDatabase=dBmain.getReadableDatabase();
-                long recedit=sqLiteDatabase.update(TABLENAME,cv,"name="+t1,null);
+                long recedit=sqLiteDatabase.update(Clinte,cv,"name="+t1,null);
                 if (recedit!=-1){
                     Toast.makeText(clinte.this, "Data updated successfully", Toast.LENGTH_SHORT).show();
                     sunmite.setVisibility(View.VISIBLE);

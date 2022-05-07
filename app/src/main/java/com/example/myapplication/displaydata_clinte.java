@@ -1,6 +1,6 @@
 package com.example.myapplication;
 
-import static com.example.myapplication.DBmain.Clinte;
+import static com.example.myapplication.DBmain_clinte.Clinte;
 import static com.example.myapplication.DBmain.TABLENAME;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -14,7 +14,7 @@ import android.os.Bundle;
 import java.util.ArrayList;
 
 public class displaydata_clinte extends AppCompatActivity {
-    DBmain dBmain;
+    DBmain_clinte dBmain;
     SQLiteDatabase sqLiteDatabase;
     RecyclerView recyclerView;
     MyAdapter_clinte myAdapter_clinte;
@@ -23,7 +23,7 @@ public class displaydata_clinte extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_displaydata_clinte);
-        dBmain=new DBmain(this);
+        dBmain=new DBmain_clinte(this);
         //create method
         findid();
         displaydata();

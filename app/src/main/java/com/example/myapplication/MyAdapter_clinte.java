@@ -1,7 +1,7 @@
 package com.example.myapplication;
 
-import static com.example.myapplication.DBmain.Clinte;
-import static com.example.myapplication.DBmain.TABLENAME;
+import static com.example.myapplication.DBmain_clinte.Clinte;
+
 
 import android.annotation.SuppressLint;
 import android.content.Context;
