@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="10dp"
+    android:elevation="8dp"
+    app:cardUseCompatPadding="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:padding="15dp"
+        android:background="@drawable/download">
+
+        <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+
+            android:id="@+id/imageView"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:foregroundGravity="center"
+            android:src="@drawable/user"
+            app:civ_border_color="#FF000000"
+            app:civ_border_width="2dp" />
+
+
+        <TextView
+            android:id="@+id/case_status_up"
+
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+
+            android:layout_toRightOf="@id/imageView"
+            android:text="User name"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/case_number_up"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/case_status_up"
+
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@id/imageView"
+            android:text="number"
+            android:textStyle="bold"
+
+            />
+
+        <TextView
+            android:id="@+id/casee_name_up"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/case_number_up"
+            android:layout_marginLeft="5dp"
+
+            android:layout_toRightOf="@id/imageView"
+            android:text="address"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/casee_date_up"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/casee_name_up"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@id/imageView"
+            android:text="Category"
+
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/update_up"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/casee_date_up"
+            android:layout_toRightOf="@id/imageView"
+            android:layout_marginLeft="5dp"
+
+            android:text="update"
+            android:textStyle="bold"
+            />
+
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/ll2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btn_edit_upsingle"
+            android:layout_width="70dp"
+            android:layout_height="40dp"
+            android:layout_gravity="end"
+            android:layout_margin="10dp"
+            android:text="Edit"
+            android:tint="#3700B3" />
+
+        <Button
+            android:id="@+id/btn_delete_upsingle"
+            android:layout_width="70dp"
+            android:layout_height="40dp"
+            android:layout_gravity="right"
+            android:layout_margin="10dp"
+            android:text="Delete"
+            android:tint="#3700B3" />
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

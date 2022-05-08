@@ -25,7 +25,7 @@
 
 
     <EditText
-        android:id="@+id/cases_status"
+        android:id="@+id/cases_status_up"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
@@ -42,10 +42,10 @@
 
 
     <EditText
-        android:id="@+id/case_number"
+        android:id="@+id/case_number_up"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/cases_status"
+        android:layout_below="@+id/cases_status_up"
         android:layout_marginStart="10dp"
         android:layout_marginTop="10dp"
         android:layout_marginEnd="10dp"
@@ -58,10 +58,10 @@
         android:textColorHint="@color/white" />
 
     <EditText
-        android:id="@+id/case_name"
+        android:id="@+id/case_name_up"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/case_number"
+        android:layout_below="@+id/case_number_up"
         android:layout_marginStart="10dp"
         android:layout_marginTop="10dp"
         android:layout_marginEnd="10dp"
@@ -74,10 +74,10 @@
         android:textColorHint="@color/white" />
 
     <EditText
-        android:id="@+id/case_date"
+        android:id="@+id/case_date_up"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/case_name"
+        android:layout_below="@+id/case_name_up"
         android:layout_marginStart="10dp"
         android:layout_marginTop="10dp"
         android:layout_marginEnd="10dp"
@@ -90,10 +90,10 @@
         android:textColorHint="@color/white" />
 
     <EditText
-        android:id="@+id/update"
+        android:id="@+id/update_up"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/case_date"
+        android:layout_below="@+id/case_date_up"
         android:layout_marginStart="10dp"
         android:layout_marginTop="10dp"
         android:layout_marginEnd="10dp"
@@ -107,10 +107,10 @@
     />
 
     <Button
-        android:id="@+id/button_login"
+        android:id="@+id/button_login_up"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/update"
+        android:layout_below="@+id/update_up"
         android:layout_centerInParent="true"
         android:layout_marginTop="12dp"
         android:text="Submit"
@@ -118,6 +118,16 @@
         android:textSize="20dp" />
 
 
+    <Button
+        android:id="@+id/button_show_up"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button_login_up"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="12dp"
+        android:text="show"
+        android:textColor="@color/white"
+        android:textSize="20dp" />
 
 
 
