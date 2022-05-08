@@ -13,6 +13,9 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
+            android:name=".Display_sch"
+            android:exported="false" />
+        <activity
             android:name=".Display_Data_casee"
             android:exported="false" />
         <activity

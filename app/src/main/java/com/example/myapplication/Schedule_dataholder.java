@@ -1,11 +1,11 @@
 package com.example.myapplication;
 
 public class Schedule_dataholder {
-    String case_status, drop ,clintename  , case_name, case_date , sc_remarks ;
+    String case_status, casenumber,clintename  , case_name, case_date , sc_remarks ;
 
-    public Schedule_dataholder(String case_status, String drop, String clintename, String case_name, String case_date, String sc_remarks) {
+    public Schedule_dataholder(String case_status, String casenumber, String clintename, String case_name, String case_date, String sc_remarks) {
         this.case_status = case_status;
-        this.drop = drop;
+        this.casenumber = casenumber;
         this.clintename = clintename;
         this.case_name = case_name;
         this.case_date = case_date;
@@ -20,12 +20,12 @@ public class Schedule_dataholder {
         this.case_status = case_status;
     }
 
-    public String getDrop() {
-        return drop;
+    public String getCasenumber() {
+        return casenumber;
     }
 
-    public void setDrop(String drop) {
-        this.drop = drop;
+    public void setCasenumber(String casenumber) {
+        this.casenumber = casenumber;
     }
 
     public String getClintename() {
