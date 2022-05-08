@@ -9,7 +9,7 @@
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="130dp"
+        android:layout_height="150dp"
         android:padding="15dp"
         android:background="@drawable/download">
 
@@ -31,7 +31,7 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="5dp"
 
-            android:layout_toRightOf="@id/imageView"
+            android:layout_toRightOf="@id/imageView_casee"
             android:text="casee status"
             android:textStyle="bold" />
 
@@ -39,10 +39,9 @@
             android:id="@+id/clinte_name_casee"
             android:layout_width="300dp"
             android:layout_height="wrap_content"
-            android:layout_below="@id/name_single"
-
+            android:layout_below="@id/casee_status_casee"
             android:layout_marginLeft="5dp"
-            android:layout_toRightOf="@id/imageView"
+            android:layout_toRightOf="@id/imageView_casee"
             android:text="clinte name"
             android:textStyle="bold"
 
@@ -52,10 +51,10 @@
             android:id="@+id/casee_number_casee"
             android:layout_width="300dp"
             android:layout_height="wrap_content"
-            android:layout_below="@id/number"
+            android:layout_below="@id/clinte_name_casee"
             android:layout_marginLeft="5dp"
 
-            android:layout_toRightOf="@id/imageView"
+            android:layout_toRightOf="@id/imageView_casee"
             android:text="casee number"
             android:textStyle="bold" />
 
@@ -63,9 +62,9 @@
             android:id="@+id/casee_name_casee"
             android:layout_width="300dp"
             android:layout_height="wrap_content"
-            android:layout_below="@id/address"
+            android:layout_below="@id/casee_number_casee"
             android:layout_marginLeft="5dp"
-            android:layout_toRightOf="@id/imageView"
+            android:layout_toRightOf="@id/imageView_casee"
             android:text="casee name"
 
             android:textStyle="bold" />
@@ -74,8 +73,8 @@
             android:id="@+id/casee_data_casee"
             android:layout_width="300dp"
             android:layout_height="wrap_content"
-            android:layout_below="@id/category"
-            android:layout_toRightOf="@id/imageView"
+            android:layout_below="@id/casee_name_casee"
+            android:layout_toRightOf="@id/imageView_casee"
             android:layout_marginLeft="5dp"
 
             android:text="casee date"
@@ -85,8 +84,8 @@
             android:id="@+id/remarks_casee_layout"
             android:layout_width="300dp"
             android:layout_height="wrap_content"
-            android:layout_below="@id/category"
-            android:layout_toRightOf="@id/imageView"
+            android:layout_below="@id/casee_data_casee"
+            android:layout_toRightOf="@id/imageView_casee"
             android:layout_marginLeft="5dp"
 
             android:text="Remarks"
