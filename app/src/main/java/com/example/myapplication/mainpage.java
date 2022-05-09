@@ -8,11 +8,14 @@ import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class mainpage extends AppCompatActivity {
-    public TextView textView , text, text2 , txt3, txt4;
+    public TextView textView , text, text2 , txt3, txt4,txt5,txt6;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_mainpage);
+
+
+
 
 
         textView= (TextView) findViewById(R.id.txt1);
@@ -57,6 +60,25 @@ txt3.setOnClickListener(new View.OnClickListener() {
             }
         });
 
+        txt5= (TextView) findViewById(R.id.txt6);
+        txt5.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v )  {
+                Intent intent= new Intent(mainpage.this, contact_us.class);
+                startActivity(intent);
+            }
+
+        });
+
+        txt6= (TextView) findViewById(R.id.txt7);
+        txt6.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v )  {
+                Intent intent= new Intent(mainpage.this, about_us.class);
+                startActivity(intent);
+            }
+
+        });
 
     }
 }
