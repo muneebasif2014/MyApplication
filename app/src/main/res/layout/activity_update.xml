@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".casee"
     android:background="@drawable/download"
-    android:orientation="horizontal">
+    android:orientation="vertical">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -29,7 +29,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
-        android:layout_marginTop="100dp"
         android:layout_marginEnd="10dp"
         android:layout_marginBottom="5dp"
         android:background="#30ffffff"
@@ -45,7 +44,6 @@
         android:id="@+id/case_number_up"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/cases_status_up"
         android:layout_marginStart="10dp"
         android:layout_marginTop="10dp"
         android:layout_marginEnd="10dp"
@@ -104,31 +102,39 @@
         android:padding="15dp"
         android:textColor="@color/white"
         android:textColorHint="@color/white" />
-    />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
 
     <Button
         android:id="@+id/button_login_up"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/update_up"
-        android:layout_centerInParent="true"
-        android:layout_marginTop="12dp"
-        android:text="Submit"
-        android:textColor="@color/white"
-        android:textSize="20dp" />
+        android:layout_marginTop="30dp"
+        android:layout_weight="1"
+        android:text="Submit" />
 
 
     <Button
         android:id="@+id/button_show_up"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/button_login_up"
-        android:layout_centerInParent="true"
-        android:layout_marginTop="12dp"
-        android:text="show"
-        android:textColor="@color/white"
-        android:textSize="20dp" />
+        android:layout_marginTop="30dp"
+        android:layout_weight="1"
+        android:text="View data" />
+        <Button
+            android:id="@+id/edit_btn_client"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="Edit"
+            android:visibility="gone" />
+    </LinearLayout>
 
 
 
-</RelativeLayout>
+
+</LinearLayout>
