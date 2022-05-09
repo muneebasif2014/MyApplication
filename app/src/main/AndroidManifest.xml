@@ -13,6 +13,20 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
+            android:name=".about_us"
+            android:exported="false" />
+        <activity
+            android:name=".navigationbar"
+            android:exported="false"
+            android:label="@string/title_activity_navigationbar"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".contact_us"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity2"
+            android:exported="false" />
+        <activity
             android:name=".Display_update"
             android:exported="false" />
         <activity
