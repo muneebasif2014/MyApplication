@@ -19,6 +19,8 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.firebase.ui.database.FirebaseRecyclerOptions;
+
 import java.util.ArrayList;
 
 public class MyAdapter_clinte extends RecyclerView.Adapter<MyAdapter_clinte.ModelViewHolder> {
@@ -36,7 +38,7 @@ public class MyAdapter_clinte extends RecyclerView.Adapter<MyAdapter_clinte.Mode
     @Override
     public MyAdapter_clinte.ModelViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         LayoutInflater inflater=LayoutInflater.from(context);
-        View view=inflater.inflate(R.layout.singledata,null);
+        View view=inflater.inflate(R.layout.sinflrdata_clinte,null);
         return new ModelViewHolder(view);
     }
 
@@ -92,14 +94,14 @@ public class MyAdapter_clinte extends RecyclerView.Adapter<MyAdapter_clinte.Mode
 
         public ModelViewHolder( View itemView) {
             super(itemView);
-            t1 = (TextView) itemView.findViewById(R.id.name_clinte);
-            t2 = (TextView) itemView.findViewById(R.id.email_clinte);
-            t3 = (TextView) itemView.findViewById(R.id.number_clinte);
-            t4 = (TextView) itemView.findViewById(R.id.address_clinte);
+            t1 = (TextView) itemView.findViewById(R.id.name_clintesingle);
+            t2 = (TextView) itemView.findViewById(R.id.email_clintesingle);
+            t3 = (TextView) itemView.findViewById(R.id.number_clintesinglne);
+            t4 = (TextView) itemView.findViewById(R.id.address_clintesingle);
             t5 = (TextView) itemView.findViewById(R.id.city_clinte);
             t6 = (TextView) itemView.findViewById(R.id.remarks_clinte);
-            edit=(Button)itemView.findViewById(R.id.edite_clinte);
-            delete=(Button)itemView.findViewById(R.id.delete_clinte);
+            edit=(Button)itemView.findViewById(R.id.edite_clintesingle);
+            delete=(Button)itemView.findViewById(R.id.delete_clintesingle);
         }
     }
 }

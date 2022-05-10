@@ -92,8 +92,8 @@ public class MyAdaptor_up extends RecyclerView.Adapter<MyAdaptor_up.ModelViewHol
             super(itemView);
             t1=(TextView)itemView.findViewById(R.id.case_status_up);
             t2=(TextView)itemView.findViewById(R.id.case_number_up);
-            t3=(TextView)itemView.findViewById(R.id.case_name_up);
-            t4=(TextView)itemView.findViewById(R.id.case_date_up);
+            t3=(TextView)itemView.findViewById(R.id.casee_name_ups);
+            t4=(TextView)itemView.findViewById(R.id.casee_date_ups);
            t5=(TextView)itemView.findViewById(R.id.update_up);
             b1=(Button)itemView.findViewById(R.id.btn_edit_upsingle);
             b2=(Button)itemView.findViewById(R.id.btn_delete_upsingle);

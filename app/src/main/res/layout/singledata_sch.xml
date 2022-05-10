@@ -35,7 +35,7 @@
             android:textStyle="bold" />
 
         <TextView
-            android:id="@+id/clinte_name_sch"
+            android:id="@+id/clinte_name_schsing"
             android:layout_width="300dp"
             android:layout_height="wrap_content"
             android:layout_below="@id/casee_status_sch"
@@ -48,10 +48,10 @@
             />
 
         <TextView
-            android:id="@+id/casee_number_sch"
+            android:id="@+id/casee_number_schsing"
             android:layout_width="300dp"
             android:layout_height="wrap_content"
-            android:layout_below="@id/clinte_name_sch"
+            android:layout_below="@id/clinte_name_schsing"
             android:layout_marginLeft="5dp"
 
             android:layout_toRightOf="@id/imageView_casee"
@@ -59,10 +59,10 @@
             android:textStyle="bold" />
 
         <TextView
-            android:id="@+id/casee_name_sch"
+            android:id="@+id/casee_name_schsing"
             android:layout_width="300dp"
             android:layout_height="wrap_content"
-            android:layout_below="@id/casee_number_sch"
+            android:layout_below="@id/casee_number_schsing"
             android:layout_marginLeft="5dp"
             android:layout_toRightOf="@id/imageView_casee"
             android:text="casee name"
@@ -70,10 +70,10 @@
             android:textStyle="bold" />
 
         <TextView
-            android:id="@+id/casee_data_sch"
+            android:id="@+id/casee_data_schsing"
             android:layout_width="300dp"
             android:layout_height="wrap_content"
-            android:layout_below="@id/casee_name_sch"
+            android:layout_below="@id/casee_name_schsing"
             android:layout_toRightOf="@id/imageView_casee"
             android:layout_marginLeft="5dp"
 
@@ -84,7 +84,7 @@
             android:id="@+id/remarks_casee_layout_sch"
             android:layout_width="300dp"
             android:layout_height="wrap_content"
-            android:layout_below="@id/casee_data_sch"
+            android:layout_below="@id/casee_data_schsing"
             android:layout_toRightOf="@id/imageView_casee"
             android:layout_marginLeft="5dp"
             android:text="Remarks"
@@ -99,7 +99,7 @@
         android:orientation="vertical">
 
         <Button
-            android:id="@+id/txt_btn_edit_sch"
+            android:id="@+id/txt_btn_edit_schsing"
             android:layout_width="70dp"
             android:layout_height="40dp"
             android:layout_gravity="end"
@@ -108,7 +108,7 @@
             android:tint="#3700B3" />
 
         <Button
-            android:id="@+id/txt_btn_delete_sch"
+            android:id="@+id/txt_btn_delete_schsing"
             android:layout_width="70dp"
             android:layout_height="40dp"
             android:layout_gravity="right"

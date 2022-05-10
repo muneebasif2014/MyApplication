@@ -92,13 +92,13 @@ public class MyAdapter_sch extends RecyclerView.Adapter<MyAdapter_sch.ModelViewH
         public ModelViewHolder( View itemView) {
             super(itemView);
             t1=(TextView)itemView.findViewById(R.id.casee_status_sch);
-            t2=(TextView)itemView.findViewById(R.id.clientname_sch);
-            t3=(TextView)itemView.findViewById(R.id.casee_number_sch);
-            t4=(TextView)itemView.findViewById(R.id.casee_name_sch);
-            t5=(TextView)itemView.findViewById(R.id.casee_data_sch);
+            t2=(TextView)itemView.findViewById(R.id.clinte_name_schsing);
+            t3=(TextView)itemView.findViewById(R.id.casee_number_schsing);
+            t4=(TextView)itemView.findViewById(R.id.casee_name_schsing);
+            t5=(TextView)itemView.findViewById(R.id.casee_data_schsing);
             t6=(TextView)itemView.findViewById(R.id.remarks_casee_layout_sch);
-            edit=(Button)itemView.findViewById(R.id.txt_btn_edit_sch);
-            delete=(Button)itemView.findViewById(R.id.txt_btn_delete_sch);
+            edit=(Button)itemView.findViewById(R.id.txt_btn_edit_schsing);
+            delete=(Button)itemView.findViewById(R.id.txt_btn_delete_schsing);
         }
     }
 }

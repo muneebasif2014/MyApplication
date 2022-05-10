@@ -69,9 +69,11 @@
         <entry key="..\:/Users/muneeb/AndroidStudioProjects/MyApplication/app/src/main/res/drawable/fingureprint.xml" value="0.19907407407407407" />
         <entry key="..\:/Users/muneeb/AndroidStudioProjects/MyApplication/app/src/main/res/drawable/ic_baseline_work_outline_24.xml" value="0.20462962962962963" />
         <entry key="..\:/Users/muneeb/AndroidStudioProjects/MyApplication/app/src/main/res/drawable/person.xml" value="0.20462962962962963" />
+        <entry key="..\:/Users/muneeb/AndroidStudioProjects/MyApplication/app/src/main/res/layout/activity_about_us.xml" value="0.1490036231884058" />
         <entry key="..\:/Users/muneeb/AndroidStudioProjects/MyApplication/app/src/main/res/layout/activity_case_details.xml" value="0.25" />
         <entry key="..\:/Users/muneeb/AndroidStudioProjects/MyApplication/app/src/main/res/layout/activity_casee.xml" value="0.22" />
         <entry key="..\:/Users/muneeb/AndroidStudioProjects/MyApplication/app/src/main/res/layout/activity_clinte.xml" value="0.1490036231884058" />
+        <entry key="..\:/Users/muneeb/AndroidStudioProjects/MyApplication/app/src/main/res/layout/activity_contact_us.xml" value="0.1490036231884058" />
         <entry key="..\:/Users/muneeb/AndroidStudioProjects/MyApplication/app/src/main/res/layout/activity_dispaly_data.xml" value="0.1490036231884058" />
         <entry key="..\:/Users/muneeb/AndroidStudioProjects/MyApplication/app/src/main/res/layout/activity_display_data_casee.xml" value="0.1490036231884058" />
         <entry key="..\:/Users/muneeb/AndroidStudioProjects/MyApplication/app/src/main/res/layout/activity_display_sch.xml" value="0.1490036231884058" />
@@ -179,72 +181,6 @@
         <entry key="..\:/projectsmesterlawer/app/src/main/res/layout/activity_registration.xml" value="0.16168478260869565" />
         <entry key="..\:/projectsmesterlawer/app/src/main/res/layout/activity_splash.xml" value="0.15806159420289856" />
         <entry key="..\:/projectsmesterlawer/app/src/main/res/layout/fragment_first.xml" value="0.16168478260869565" />
-        <entry key="..\:/sami/app/src/main/res/drawable-v21/ic_menu_camera.xml" value="0.1" />
-        <entry key="..\:/sami/app/src/main/res/drawable-v21/ic_menu_gallery.xml" value="0.1" />
-        <entry key="..\:/sami/app/src/main/res/drawable-v21/ic_menu_slideshow.xml" value="0.1" />
-        <entry key="..\:/sami/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.1" />
-        <entry key="..\:/sami/app/src/main/res/drawable/ic_baseline_contact_support_24.xml" value="0.1" />
-        <entry key="..\:/sami/app/src/main/res/drawable/ic_baseline_info_24.xml" value="0.1" />
-        <entry key="..\:/sami/app/src/main/res/drawable/ic_baseline_person_outline_24.xml" value="0.1" />
-        <entry key="..\:/sami/app/src/main/res/drawable/ic_baseline_picture_as_pdf_24.xml" value="0.1" />
-        <entry key="..\:/sami/app/src/main/res/drawable/ic_baseline_work_outline_24.xml" value="0.1" />
-        <entry key="..\:/sami/app/src/main/res/drawable/ic_delete_black_24dp.xml" value="0.1" />
-        <entry key="..\:/sami/app/src/main/res/drawable/ic_edit_black_24dp.xml" value="0.1" />
-        <entry key="..\:/sami/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1" />
-        <entry key="..\:/sami/app/src/main/res/drawable/notebook.xml" value="0.1" />
-        <entry key="..\:/sami/app/src/main/res/drawable/person.xml" value="0.1" />
-        <entry key="..\:/sami/app/src/main/res/drawable/rect_rounded_button.xml" value="0.124" />
-        <entry key="..\:/sami/app/src/main/res/drawable/side_nav_bar.xml" value="0.1" />
-        <entry key="..\:/sami/app/src/main/res/drawable/update.xml" value="0.1" />
-        <entry key="..\:/sami/app/src/main/res/layout/activity_about_us.xml" value="0.19583333333333333" />
-        <entry key="..\:/sami/app/src/main/res/layout/activity_base.xml" value="0.19583333333333333" />
-        <entry key="..\:/sami/app/src/main/res/layout/activity_case_details.xml" value="0.19583333333333333" />
-        <entry key="..\:/sami/app/src/main/res/layout/activity_casee.xml" value="0.19583333333333333" />
-        <entry key="..\:/sami/app/src/main/res/layout/activity_clinte.xml" value="0.19583333333333333" />
-        <entry key="..\:/sami/app/src/main/res/layout/activity_contact_us.xml" value="0.25" />
-        <entry key="..\:/sami/app/src/main/res/layout/activity_dispaly_data.xml" value="0.19583333333333333" />
-        <entry key="..\:/sami/app/src/main/res/layout/activity_display_data_casee.xml" value="0.19583333333333333" />
-        <entry key="..\:/sami/app/src/main/res/layout/activity_display_sch.xml" value="0.19583333333333333" />
-        <entry key="..\:/sami/app/src/main/res/layout/activity_fragment.xml" value="0.19583333333333333" />
-        <entry key="..\:/sami/app/src/main/res/layout/activity_labtask.xml" value="0.1" />
-        <entry key="..\:/sami/app/src/main/res/layout/activity_location_case.xml" value="0.19583333333333333" />
-        <entry key="..\:/sami/app/src/main/res/layout/activity_login.xml" value="0.19583333333333333" />
-        <entry key="..\:/sami/app/src/main/res/layout/activity_main.xml" value="0.19583333333333333" />
-        <entry key="..\:/sami/app/src/main/res/layout/activity_main2.xml" value="0.19583333333333333" />
-        <entry key="..\:/sami/app/src/main/res/layout/activity_main3.xml" value="0.19583333333333333" />
-        <entry key="..\:/sami/app/src/main/res/layout/activity_maindashboard.xml" value="0.19583333333333333" />
-        <entry key="..\:/sami/app/src/main/res/layout/activity_mainpage.xml" value="0.17" />
-        <entry key="..\:/sami/app/src/main/res/layout/activity_navigationbar.xml" value="0.19583333333333333" />
-        <entry key="..\:/sami/app/src/main/res/layout/activity_opponent_details.xml" value="0.19583333333333333" />
-        <entry key="..\:/sami/app/src/main/res/layout/activity_registration.xml" value="0.19583333333333333" />
-        <entry key="..\:/sami/app/src/main/res/layout/activity_schedule.xml" value="0.19583333333333333" />
-        <entry key="..\:/sami/app/src/main/res/layout/activity_splash.xml" value="0.19583333333333333" />
-        <entry key="..\:/sami/app/src/main/res/layout/activity_update.xml" value="0.19583333333333333" />
-        <entry key="..\:/sami/app/src/main/res/layout/activity_wraper_frag.xml" value="0.19583333333333333" />
-        <entry key="..\:/sami/app/src/main/res/layout/app_bar_main.xml" value="0.19583333333333333" />
-        <entry key="..\:/sami/app/src/main/res/layout/content_main.xml" value="0.19583333333333333" />
-        <entry key="..\:/sami/app/src/main/res/layout/content_navigationbar.xml" value="0.18177083333333333" />
-        <entry key="..\:/sami/app/src/main/res/layout/fragment_case.xml" value="0.19583333333333333" />
-        <entry key="..\:/sami/app/src/main/res/layout/fragment_client.xml" value="0.19583333333333333" />
-        <entry key="..\:/sami/app/src/main/res/layout/fragment_contactus.xml" value="0.19583333333333333" />
-        <entry key="..\:/sami/app/src/main/res/layout/fragment_gallery.xml" value="0.19583333333333333" />
-        <entry key="..\:/sami/app/src/main/res/layout/fragment_home.xml" value="0.19583333333333333" />
-        <entry key="..\:/sami/app/src/main/res/layout/fragment_lawyers.xml" value="0.19583333333333333" />
-        <entry key="..\:/sami/app/src/main/res/layout/fragment_schedule.xml" value="0.19583333333333333" />
-        <entry key="..\:/sami/app/src/main/res/layout/fragment_slideshow.xml" value="0.19583333333333333" />
-        <entry key="..\:/sami/app/src/main/res/layout/fragment_update.xml" value="0.19583333333333333" />
-        <entry key="..\:/sami/app/src/main/res/layout/nav_header_main.xml" value="0.19583333333333333" />
-        <entry key="..\:/sami/app/src/main/res/layout/navbar.xml" value="0.1" />
-        <entry key="..\:/sami/app/src/main/res/layout/sinflrdata_clinte.xml" value="0.19583333333333333" />
-        <entry key="..\:/sami/app/src/main/res/layout/singledata.xml" value="0.19583333333333333" />
-        <entry key="..\:/sami/app/src/main/res/layout/singledata_casee.xml" value="0.19583333333333333" />
-        <entry key="..\:/sami/app/src/main/res/layout/singledata_sch.xml" value="0.19583333333333333" />
-        <entry key="..\:/sami/app/src/main/res/layout/singledata_up.xml" value="0.19583333333333333" />
-        <entry key="..\:/sami/app/src/main/res/menu/activity_main3_drawer.xml" value="0.25" />
-        <entry key="..\:/sami/app/src/main/res/menu/activity_main_drawer.xml" value="0.33" />
-        <entry key="..\:/sami/app/src/main/res/menu/activity_navigationbar_drawer.xml" value="0.5" />
-        <entry key="..\:/sami/app/src/main/res/menu/main_activity3.xml" value="0.19583333333333333" />
-        <entry key="..\:/sami/app/src/main/res/menu/navigationbar.xml" value="0.19583333333333333" />
         <entry key="..\:/worst/app/src/main/res/layout/activity_lawyer.xml" value="0.19583333333333333" />
         <entry key="..\:/worst/app/src/main/res/layout/activity_login.xml" value="0.19583333333333333" />
         <entry key="..\:/worst/app/src/main/res/layout/activity_main.xml" value="0.19583333333333333" />

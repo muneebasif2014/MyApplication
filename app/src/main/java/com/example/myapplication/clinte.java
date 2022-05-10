@@ -142,7 +142,7 @@ public class clinte extends AppCompatActivity {
         t6= (EditText) findViewById(R.id.remarks);
         sunmite= (Button) findViewById(R.id.sumite_clinte);
         display= (Button) findViewById(R.id.show_clinte);
-        edit= (Button) findViewById(R.id.edite_clinte);
+        edit= (Button) findViewById(R.id.edite_clintesingle);
     }
 
 

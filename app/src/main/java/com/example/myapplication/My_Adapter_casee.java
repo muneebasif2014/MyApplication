@@ -92,13 +92,13 @@ import java.util.ArrayList;
         public ModelViewHolder( View itemView) {
             super(itemView);
             t1=(TextView)itemView.findViewById(R.id.casee_status_casee);
-            t2=(TextView)itemView.findViewById(R.id.clientname_casee);
-            t3=(TextView)itemView.findViewById(R.id.casee_number_casee);
-           t4=(TextView)itemView.findViewById(R.id.casename_casee);
-            t5=(TextView)itemView.findViewById(R.id.casedate_casee);
-            t6=(TextView)itemView.findViewById(R.id.remarks_casee);
-            edit=(Button)itemView.findViewById(R.id.txt_btn_edit);
-            delete=(Button)itemView.findViewById(R.id.txt_btn_delete);
+            t2=(TextView)itemView.findViewById(R.id.clinte_name_caseesingle);
+            t3=(TextView)itemView.findViewById(R.id.casee_number_caseesingle);
+           t4=(TextView)itemView.findViewById(R.id.casee_name_caseesingle);
+            t5=(TextView)itemView.findViewById(R.id.casee_data_caseesingle);
+            t6=(TextView)itemView.findViewById(R.id.remarks_casee_layoutsingle);
+            edit=(Button)itemView.findViewById(R.id.txt_btn_edit_caseesingle);
+            delete=(Button)itemView.findViewById(R.id.txt_btn_delete_caseesingle);
         }
     }
 }
