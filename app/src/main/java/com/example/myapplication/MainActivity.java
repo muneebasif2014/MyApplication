@@ -102,6 +102,10 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
+
+
+
+
     private void findid() {
         name = (EditText) findViewById(R.id.name);
         number = (EditText) findViewById(R.id.number);
