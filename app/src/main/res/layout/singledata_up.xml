@@ -49,7 +49,7 @@
             />
 
         <TextView
-            android:id="@+id/casee_name_up"
+            android:id="@+id/casee_name_ups"
             android:layout_width="300dp"
             android:layout_height="wrap_content"
             android:layout_below="@id/case_number_up"
@@ -60,10 +60,10 @@
             android:textStyle="bold" />
 
         <TextView
-            android:id="@+id/casee_date_up"
+            android:id="@+id/casee_date_ups"
             android:layout_width="300dp"
             android:layout_height="wrap_content"
-            android:layout_below="@id/casee_name_up"
+            android:layout_below="@id/casee_name_ups"
             android:layout_marginLeft="5dp"
             android:layout_toRightOf="@id/imageView"
             android:text="Category"
@@ -74,7 +74,7 @@
             android:id="@+id/update_up"
             android:layout_width="300dp"
             android:layout_height="wrap_content"
-            android:layout_below="@id/casee_date_up"
+            android:layout_below="@id/casee_date_ups"
             android:layout_toRightOf="@id/imageView"
             android:layout_marginLeft="5dp"
 

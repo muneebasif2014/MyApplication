@@ -36,7 +36,7 @@
             android:textStyle="bold" />
 
         <TextView
-            android:id="@+id/clinte_name_casee"
+            android:id="@+id/clinte_name_caseesingle"
             android:layout_width="300dp"
             android:layout_height="wrap_content"
             android:layout_below="@id/casee_status_casee"
@@ -48,10 +48,10 @@
             />
 
         <TextView
-            android:id="@+id/casee_number_casee"
+            android:id="@+id/casee_number_caseesingle"
             android:layout_width="300dp"
             android:layout_height="wrap_content"
-            android:layout_below="@id/clinte_name_casee"
+            android:layout_below="@id/clinte_name_caseesingle"
             android:layout_marginLeft="5dp"
 
             android:layout_toRightOf="@id/imageView_casee"
@@ -59,10 +59,10 @@
             android:textStyle="bold" />
 
         <TextView
-            android:id="@+id/casee_name_casee"
+            android:id="@+id/casee_name_caseesingle"
             android:layout_width="300dp"
             android:layout_height="wrap_content"
-            android:layout_below="@id/casee_number_casee"
+            android:layout_below="@id/casee_number_caseesingle"
             android:layout_marginLeft="5dp"
             android:layout_toRightOf="@id/imageView_casee"
             android:text="casee name"
@@ -70,10 +70,10 @@
             android:textStyle="bold" />
 
         <TextView
-            android:id="@+id/casee_data_casee"
+            android:id="@+id/casee_data_caseesingle"
             android:layout_width="300dp"
             android:layout_height="wrap_content"
-            android:layout_below="@id/casee_name_casee"
+            android:layout_below="@id/casee_name_caseesingle"
             android:layout_toRightOf="@id/imageView_casee"
             android:layout_marginLeft="5dp"
 
@@ -81,10 +81,10 @@
             android:textStyle="bold"
             />
         <TextView
-            android:id="@+id/remarks_casee_layout"
+            android:id="@+id/remarks_casee_layoutsingle"
             android:layout_width="300dp"
             android:layout_height="wrap_content"
-            android:layout_below="@id/casee_data_casee"
+            android:layout_below="@id/casee_data_caseesingle"
             android:layout_toRightOf="@id/imageView_casee"
             android:layout_marginLeft="5dp"
 
@@ -100,7 +100,7 @@
         android:orientation="vertical">
 
         <Button
-            android:id="@+id/txt_btn_edit_casee"
+            android:id="@+id/txt_btn_edit_caseesingle"
             android:layout_width="70dp"
             android:layout_height="40dp"
             android:layout_gravity="end"
@@ -109,7 +109,7 @@
             android:tint="#3700B3" />
 
         <Button
-            android:id="@+id/txt_btn_delete_casee"
+            android:id="@+id/txt_btn_delete_caseesingle"
             android:layout_width="70dp"
             android:layout_height="40dp"
             android:layout_gravity="right"
